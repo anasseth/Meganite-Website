@@ -1,0 +1,89 @@
+body {
+  background-color: #b39477 !important;
+}
+
+md-icon {
+  font-family: "Material Icons" !important;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+.show {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.popup {
+  margin: 15% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 2s ease-in-out;
+  background-color: #e2e2e2;
+
+  h2 {
+    font-size: 14px;
+    color: black;
+    font-family: "Didact Gothic";
+    text-transform: uppercase;
+  }
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: top;
+}
+
+.countryContainer {
+  // border: 1px solid grey;
+  width: 30%;
+  // height: 200px;
+
+  h6 {
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    font-family: "Didact Gothic";
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  p {
+    // vertical-align: middle;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    font-family: "Didact Gothic";
+    // text-transform: uppercase;
+  }
+  img {
+    width: 25px;
+    vertical-align: middle;
+  }
+}

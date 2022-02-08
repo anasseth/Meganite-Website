@@ -1,0 +1,178 @@
+* {
+  font-family: "Lora", serif;
+  // font-family: "Playball", cursive;
+}
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.HomeMainContainer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+.HomeBannerFirstImage {
+  width: 100%;
+  position: relative;
+}
+.HomeTextFirstContainer {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  // background-color: white;
+
+  h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 45px;
+  }
+  h4 {
+    color: white;
+    font-size: 25px;
+  }
+}
+
+h4 {
+  color: white;
+}
+
+.HomeLinkContainer {
+  // background-color: rgb(255, 96, 96);
+  background-color: #f0f0f0;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  width: 50px;
+  height: 150px;
+}
+.HomeBannerSecondContainer {
+  display: flex;
+  justify-content: center;
+}
+.HomeImageSecondContainer {
+  position: relative;
+}
+.HomeTextSecondContainer {
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+  }
+}
+.HomeBannerThirdContainer {
+  display: flex;
+  justify-content: center;
+}
+.HomeBannerFourthContainer {
+  display: flex;
+  justify-content: center;
+}
+.HomeImageFourthContainer {
+  position: relative;
+}
+.HomeImageFifthContainer {
+  position: relative;
+}
+.HomeTextFourthContainer {
+  width: 90%;
+  position: absolute;
+  bottom: 40%;
+  left: 3%;
+  h1 {
+    color: rgb(61, 61, 61);
+    font-weight: 700;
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 16px;
+    color: rgb(61, 61, 61);
+  }
+  a {
+    color: rgb(61, 61, 61);
+    margin-top: 10px;
+  }
+}
+.HomeBannerFifthContainer {
+  display: flex;
+  justify-content: center;
+}
+.HomeTextFifthContainer {
+  width: 80%;
+  position: absolute;
+  bottom: 20%;
+  left: 3%;
+  h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 16px;
+    // color: rgb(61, 61, 61);
+  }
+  a {
+    // color: rgb(61, 61, 61);
+    color: white;
+    margin-top: 10px;
+  }
+}
+.slide {
+  background-color: white;
+  border: 1px solid rgb(245, 245, 245);
+  height: 400px;
+  text-align: center;
+  img {
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
+  }
+  b {
+    display: block;
+    margin: auto;
+    font-weight: 900;
+  }
+  a {
+    display: block;
+    margin: auto;
+    color: lightgray;
+  }
+}
+
+.mainIcon {
+  color: inherit;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  transition-duration: 0.2s;
+  vertical-align: middle;
+}
+.mainIcon:hover {
+  background-color: #ff1d31;
+  transition-duration: 0.2s;
+  color: inherit;
+}
+.mainIconContainer {
+  background-color: transparent;
+  width: max-content;
+  transition-duration: 0.3s;
+  color: #ff1d31;
+  p {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: transparent;
+    font-family: "Didact Gothic";
+  }
+}
+
+.mainIconContainer:hover {
+  color: white;
+  background-color: #ff1d31;
+  transition-duration: 0.3s;
+  p {
+    color: white;
+  }
+}

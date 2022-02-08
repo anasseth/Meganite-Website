@@ -1,0 +1,93 @@
+.HeaderMainContainer {
+  background-color: white;
+  height: 60px;
+  position: fixed;
+  border-bottom: 2px solid transparent;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  /* justify-content: center; */
+  align-items: center;
+  -webkit-box-shadow: 0px 7px 25px 0px rgba(50, 50, 50, 0.39);
+  -moz-box-shadow: 0px 7px 25px 0px rgba(50, 50, 50, 0.39);
+  box-shadow: 0px 7px 25px 0px rgba(50, 50, 50, 0.39);
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.headerBarPositioningZero {
+  top: 0px !important;
+}
+
+.headerBarPositioningBottom {
+  top: 62px !important;
+}
+
+a {
+  font-family: "Didact Gothic";
+  width: 12%;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-weight: 500;
+  border-bottom: 3px solid white;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  border-bottom: 3px solid red;
+  transition-duration: 0.3s;
+}
+
+.LinkContainerOne {
+  width: 30%;
+  //   border: 1px solid grey;
+}
+.LinkContainerTwo {
+  width: 33%;
+  //   border: 1px solid grey;
+}
+.LogoContainer {
+  width: 15%;
+  //   border: 1px solid grey;
+}
+.InputContainer {
+  width: fit-content;
+  margin: auto;
+  p {
+    color: black;
+    font-family: "Didact Gothic";
+    display: inline;
+    margin-right: 30px;
+  }
+}
+.InputStyling {
+  background-color: #888888;
+  font-family: "Didact Gothic";
+  color: white;
+  padding-left: 10px;
+  width: 230px;
+  height: 31px;
+  border: 1px solid transparent;
+}
+.InputStyling::placeholder {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+.subscribeButton {
+  height: 35px;
+  width: 35px;
+  background-color: #ff1d31;
+  color: white;
+  border: 1px solid transparent;
+}
+.cancelButton {
+  margin-left: 20px;
+  height: 35px;
+  width: 35px;
+  background-color: #7c7c7c;
+  color: white;
+  border: 1px solid transparent;
+}

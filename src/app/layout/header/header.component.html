@@ -1,1 +1,50 @@
-<p>header works!</p>
+<div
+  class="HeaderMainContainer"
+  style="background-color: #c0c0c0"
+  *ngIf="this.global.showRegion"
+>
+  <div class="LinkContainerOne"></div>
+  <div>
+    <div class="InputContainer">
+      <p>Choose Another Region</p>
+      <input type="text" class="InputStyling" placeholder="Taiwan" />
+      <button class="subscribeButton">Go</button>
+      <button class="cancelButton" (click)="showRegionPopup()">X</button>
+    </div>
+  </div>
+  <div class="LinkContainerTwo" style="width: 30%"></div>
+</div>
+
+<div
+  [ngClass]="
+    this.global.showRegion == false
+      ? 'HeaderMainContainer headerBarPositioningZero'
+      : 'HeaderMainContainer headerBarPositioningBottom'
+  "
+>
+  <div class="LinkContainerOne">
+    <a>Product</a>
+    <a>Anitmicrobial</a>
+    <a>Franchise</a>
+    <a>Healthcare</a>
+  </div>
+  <div class="LogoContainer">
+    <img
+      src="../../../assets/logo.png"
+      alt=""
+      style="height: 90%"
+      routerLink="/"
+    />
+  </div>
+  <div class="LinkContainerTwo">
+    <a>News</a>
+    <a>Inspiration</a>
+    <a>Specification</a>
+    <a (click)="showRegionPopup()">Region</a>
+    <a (click)="showCountryPopup()"
+      ><img
+        style="width: 20px; vertical-align: middle"
+        src="https://img.icons8.com/color/48/000000/europe.png"
+    /></a>
+  </div>
+</div>
