@@ -21,12 +21,12 @@ export class HomeComponent implements OnInit {
   safeURL: any = "";
 
   constructor(private _sanitizer: DomSanitizer, private wowService: NgwWowService) {
-    this.wowService.init();
+    // this.wowService.init();
     this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(this.videoURL);
   }
 
   ngOnInit(): void {
-    // this.wowService.init();
+    this.wowService.init();
   }
 
   customOptions: OwlOptions = {
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
     pullDrag: true,
     dots: false,
     navSpeed: 600,
-    navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+    navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
         items: 1
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
         items: 4
       }
     },
-    // nav: true
+    nav: true
   }
 
 }
