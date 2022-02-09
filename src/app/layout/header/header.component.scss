@@ -35,20 +35,23 @@ a {
   transition-duration: 0.3s;
   text-decoration: none;
   color: black;
+  font-size: 14px;
 }
 
 a:hover {
   border-bottom: 3px solid red;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .activeLink {
   border-bottom: 3px solid red;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .LinkContainerOne {
-  width: 30%;
+  width: 33%;
   //   border: 1px solid grey;
 }
 .LinkContainerTwo {
@@ -56,7 +59,7 @@ a:hover {
   //   border: 1px solid grey;
 }
 .LogoContainer {
-  width: 15%;
+  width: fit-content;
   //   border: 1px solid grey;
 }
 .InputContainer {
@@ -170,3 +173,25 @@ a:hover {
   margin-top: -10%;
   margin-left: 2%;
 }
+
+@media screen and (max-width: 1155px) {
+  a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .LinkContainerOne {
+    width: 40%;
+    text-align: center;
+  }
+  .LinkContainerTwo {
+    width: 40%;
+    text-align: center;
+  }
+}
+

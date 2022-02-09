@@ -36,7 +36,7 @@
   margin-right: 70px;
   width: 400px;
   height: 100px;
-//   border: 1px solid black;
+  //   border: 1px solid black;
   display: flex;
   align-items: center;
 }
@@ -61,4 +61,10 @@ b {
   background-color: #ff1d31;
   color: white;
   border: 1px solid transparent;
+}
+
+@media screen and (max-width: 1100px) {
+  .subscribeContainer {
+    margin-right: 0px;
+  }
 }

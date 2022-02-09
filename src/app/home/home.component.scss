@@ -15,18 +15,18 @@
 }
 .HomeTextFirstContainer {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 5%;
   // background-color: white;
 
   h1 {
     color: white;
-    font-weight: 700;
-    font-size: 45px;
+    font-weight: 500;
+    font-size: 36px;
   }
   h4 {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 
@@ -187,4 +187,55 @@ h4 {
   position: absolute !important;
   top: 37% !important;
   left: 0 !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .HomeLinkContainer {
+    bottom: 40%;
+  }
+  .HomeTextFirstContainer {
+    h1 {
+      color: white;
+      font-weight: 500;
+      font-size: 25px;
+    }
+    h4 {
+      color: white;
+      font-size: 14px;
+    }
+  }
+  .HomeTextSecondContainer {
+    h1 {
+      font-weight: 500;
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+  }
+
+  .HomeTextFourthContainer {
+    bottom: 30%;
+    h1 {
+      color: rgb(61, 61, 61);
+      font-weight: 700;
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    a {
+      margin-top: 10px;
+    }
+  }
+  .HomeTextFifthContainer {
+    h1 {
+      color: white;
+      font-weight: 700;
+      font-size: 25px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+  }
 }
