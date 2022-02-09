@@ -9,6 +9,18 @@
   position: absolute;
   left: 0;
 }
+.hide {
+  display: block;
+  visibility: visible;
+}
+.show {
+  display: none;
+  visibility: hidden;
+}
+.hide2 {
+  display: block;
+  visibility: visible;
+}
 .HomeBannerFirstImage {
   width: 100%;
   position: relative;
@@ -237,5 +249,69 @@ h4 {
     h4 {
       font-size: 14px;
     }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .HomeBannerSecondContainer {
+    flex-wrap: wrap;
+  }
+  .HomeImageSecondContainer {
+    width: 100%;
+  }
+  .HomeBannerThirdContainer {
+    flex-wrap: wrap;
+  }
+  .HomeBannerFourthContainer {
+    flex-wrap: wrap;
+  }
+  .HomeImageFourthContainer {
+    width: 100%;
+  }
+  .HomeImageFifthContainer {
+    width: 100%;
+  }
+  .hide {
+    display: none;
+    visibility: hidden;
+  }
+  .HomeBannerFifthContainer {
+    flex-wrap: wrap;
+  }
+  .HomeImageFifthContainer {
+    width: 100%;
+  }
+  .imageContainerGeneral {
+    height: 300px;
+  }
+  .generalTextImageContainer {
+    width: 100%;
+  }
+  .bannerFourthImageContainer {
+    height: 300px !important;
+    object-fit: cover;
+  }
+  .youtubeVideo {
+    height: 50vh !important;
+  }
+  .imageHeight {
+    height: 450px !important;
+  }
+  .show {
+    display: block;
+    visibility: visible;
+  }
+  .hide2 {
+    display: none;
+    visibility: hidden;
+  }
+  .secondImageResponsive {
+    height: 100vh !important;
+    object-fit: fill;
+  }
+  .mainHomeImageResponsive {
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: 30%;
   }
 }

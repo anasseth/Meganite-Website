@@ -4,6 +4,7 @@
     src="../../assets/Home-Banner-1.png"
     style="width: 100%; height: auto"
     alt=""
+    class="mainHomeImageResponsive"
   />
   <div class="HomeLinkContainer">
     <div class="mainIconContainer">
@@ -46,6 +47,7 @@
       src="../../assets/Home-Banner-2.png"
       alt=""
       style="width: 100%; height: auto"
+      class="secondImageResponsive"
     />
     <div
       class="HomeTextSecondContainer wow animate__animated animate__fadeInDown animate__slower"
@@ -63,6 +65,7 @@
       src="../../assets/Home-Banner-3.png"
       alt=""
       style="width: 100%; height: auto"
+      class="secondImageResponsive"
     />
     <div
       class="HomeTextSecondContainer wow animate__animated animate__fadeInDown animate__slower"
@@ -77,6 +80,7 @@
 <div>
   <iframe
     style="width: 100%; height: 120vh"
+    class="youtubeVideo"
     [src]="safeURL"
     title="YouTube video player"
     frameborder="0"
@@ -86,7 +90,7 @@
 </div>
 <div class="HomeBannerThirdContainer">
   <div
-    class="HomeImageSecondContainer wow animate__animated animate__backInRight"
+    class="HomeImageSecondContainer wow animate__animated animate__backInRight imageContainerGeneral"
   >
     <img
       src="../../assets/Home-Banner-4.png"
@@ -100,11 +104,12 @@
       <h4>Get Inspired By Meganite's Top Selling Colors</h4>
     </div>
   </div>
-  <div>
+  <div class="hide">
     <img
       src="../../assets/Home-Banner-5.png"
       alt=""
       style="width: 100%; height: auto"
+      class="hide"
     />
   </div>
 </div>
@@ -165,6 +170,7 @@
       src="../../assets/Home-Banner-6.png"
       alt=""
       style="width: 100%; height: auto"
+      class="bannerFourthImageContainer"
     />
     <div class="HomeTextFourthContainer">
       <h1 class="wow animate__animated animate__fadeInDown">
@@ -178,28 +184,30 @@
       <a>Learn More about AcryMed </a>
     </div>
   </div>
-  <div>
+  <div class="generalTextImageContainer">
     <img
       src="../../assets/Home-Banner-7.png"
       alt=""
       style="width: 100%; height: auto"
+      class="imageHeight"
     />
   </div>
 </div>
 
 <div class="HomeBannerFifthContainer">
-  <div>
+  <div class="generalTextImageContainer hide2">
     <img
       src="../../assets/Home-Banner-8.png"
       alt=""
       style="width: 100%; height: auto"
     />
   </div>
-  <div class="HomeImageFifthContainer">
+  <div class="HomeImageFifthContainer imageContainerGeneral">
     <img
       src="../../assets/Home-Banner-9.png"
       alt=""
       style="width: 100%; height: auto"
+      class="bannerFourthImageContainer"
     />
     <div
       class="HomeTextFifthContainer wow animate__animated animate__fadeInDown"
@@ -210,6 +218,14 @@
       </h1>
       <a>Explore Now >>></a>
     </div>
+  </div>
+  <div class="generalTextImageContainer show">
+    <img
+      src="../../assets/Home-Banner-8.png"
+      alt=""
+      style="width: 100%; height: auto"
+      class="imageHeight"
+    />
   </div>
 </div>
 <app-footer></app-footer>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalService } from 'src/app/service/global.service';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +12,8 @@ export class HeaderComponent implements OnInit {
 
   showRegionChange: boolean = true;
   activatedLink: string = "";
+  faHamburger = faBars;
+  faGlobe = faGlobe;
 
   constructor(public global: GlobalService) { }
 

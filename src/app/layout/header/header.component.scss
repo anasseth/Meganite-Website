@@ -17,6 +17,11 @@
   justify-content: space-evenly;
 }
 
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
 .headerBarPositioningZero {
   top: 0px !important;
 }
@@ -194,4 +199,28 @@ a:hover {
     text-align: center;
   }
 }
-
+@media screen and (max-width: 840px) {
+  .HeaderMainContainer {
+    justify-content: space-between;
+  }
+  .LinkContainerOne {
+    width: 10%;
+    //   border: 1px solid grey;
+  }
+  .LinkContainerTwo {
+    width: 10%;
+    //   border: 1px solid grey;
+  }
+  .LogoContainer {
+    width: fit-content;
+    //   border: 1px solid grey;
+  }
+  .headerLink {
+    display: none;
+    visibility: hidden;
+  }
+  .hide {
+    display: block;
+    visibility: visible;
+  }
+}

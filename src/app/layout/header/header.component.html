@@ -23,33 +23,44 @@
   "
 >
   <div class="LinkContainerOne">
+    <a class="hide"
+      ><fa-icon
+        [icon]="faHamburger"
+        style="font-size: 25px; color: grey"
+      ></fa-icon
+    ></a>
     <a
-      [ngClass]="activatedLink == 'Product' ? 'activeLink' : ''"
+      [ngClass]="
+        activatedLink == 'Product' ? 'activeLink headerLink' : 'headerLink'
+      "
       (click)="showDropdown()"
       >Product</a
     >
-    <a>Anitmicrobial</a>
-    <a>Franchise</a>
-    <a>Healthcare</a>
+    <a class="headerLink">Anitmicrobial</a>
+    <a class="headerLink">Franchise</a>
+    <a class="headerLink">Healthcare</a>
   </div>
   <div class="LogoContainer">
     <img
       src="../../../assets/logo.png"
       alt=""
+      LLLLLL
       style="height: 90%"
       routerLink="/"
     />
   </div>
   <div class="LinkContainerTwo">
-    <a routerLink="/news">News</a>
-    <a>Inspiration</a>
-    <a>Specification</a>
-    <a (click)="showRegionPopup()">Region</a>
-    <a (click)="showCountryPopup()"
-      ><img
+    <a routerLink="/news" class="headerLink">News</a>
+    <a class="headerLink">Inspiration</a>
+    <a class="headerLink">Specification</a>
+    <a class="headerLink" (click)="showRegionPopup()">Region</a>
+    <a (click)="showCountryPopup()">
+      <!-- <img
         style="width: 20px; vertical-align: middle"
         src="https://img.icons8.com/color/48/000000/europe.png"
-    /></a>
+    /> -->
+      <fa-icon [icon]="faGlobe" style="font-size: 17px; color: grey"></fa-icon>
+    </a>
   </div>
 </div>
 
@@ -64,7 +75,7 @@
   <div class="rightContainer">
     <div class="headerImageContainer1">
       <img src="../../../assets/Header (1).png" style="height: auto" alt="" />
-      <div class="headerImageContainerText" >THE MARBLE-INSPIRED TREND</div>
+      <div class="headerImageContainerText">THE MARBLE-INSPIRED TREND</div>
     </div>
     <div class="headerImageContainer2">
       <img src="../../../assets/Header (2).png" style="height: auto" alt="" />
