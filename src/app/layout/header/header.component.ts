@@ -9,6 +9,7 @@ import { GlobalService } from 'src/app/service/global.service';
 export class HeaderComponent implements OnInit {
 
   showRegionChange: boolean = true;
+  activatedLink: string = "";
 
   constructor(public global: GlobalService) { }
 
@@ -21,6 +22,15 @@ export class HeaderComponent implements OnInit {
 
   showRegionPopup() {
     this.global.showRegion = !this.global.showRegion
+  }
+
+  showDropdown() {
+    if (this.activatedLink == '') {
+      this.activatedLink = "Product"
+    }
+    else {
+      this.activatedLink = '';
+    }
   }
 
 }

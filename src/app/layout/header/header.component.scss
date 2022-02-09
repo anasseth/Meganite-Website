@@ -34,9 +34,15 @@ a {
   border-bottom: 3px solid white;
   transition-duration: 0.3s;
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
+  border-bottom: 3px solid red;
+  transition-duration: 0.3s;
+}
+
+.activeLink {
   border-bottom: 3px solid red;
   transition-duration: 0.3s;
 }
@@ -97,6 +103,8 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 1;
   align-items: center;
   background-color: #e8e8e8;
 }
@@ -110,6 +118,10 @@ a:hover {
 .rightContainer {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: space-evenly;
 }
 .dropdownLinkContainer {
   vertical-align: middle;
@@ -139,6 +151,22 @@ a:hover {
   }
 }
 
-.headerImageContainer2{
-  
+.headerImageContainer1 {
+  height: 60%;
+  margin-top: 5%;
+}
+
+.headerImageContainer2 {
+  height: 60%;
+  margin-top: 5%;
+}
+
+.headerImageContainerText {
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: -10%;
+  margin-left: 2%;
 }

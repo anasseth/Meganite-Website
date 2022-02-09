@@ -23,7 +23,11 @@
   "
 >
   <div class="LinkContainerOne">
-    <a>Product</a>
+    <a
+      [ngClass]="activatedLink == 'Product' ? 'activeLink' : ''"
+      (click)="showDropdown()"
+      >Product</a
+    >
     <a>Anitmicrobial</a>
     <a>Franchise</a>
     <a>Healthcare</a>
@@ -49,7 +53,7 @@
   </div>
 </div>
 
-<div class="dropdownHeaderContainer">
+<div class="dropdownHeaderContainer" *ngIf="this.activatedLink == 'Product'">
   <div class="leftContainer">
     <div class="dropdownLinkContainer">
       <a>Solid Surface</a>
@@ -59,10 +63,12 @@
   </div>
   <div class="rightContainer">
     <div class="headerImageContainer1">
-      <img src="../../../assets/Header (1).png" style="width:40%; height: auto;" alt="" />
+      <img src="../../../assets/Header (1).png" style="height: auto" alt="" />
+      <div class="headerImageContainerText" >THE MARBLE-INSPIRED TREND</div>
     </div>
     <div class="headerImageContainer2">
-      <img src="../../../assets/Header (2).png" style="width:40%; height: auto;" alt="" />
+      <img src="../../../assets/Header (2).png" style="height: auto" alt="" />
+      <div class="headerImageContainerText">CATTAIL M038 ></div>
     </div>
   </div>
 </div>
