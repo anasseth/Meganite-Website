@@ -81,3 +81,12 @@
   padding: 10px;
   width: 42%;
 }
+
+@media screen and (max-width: 840px) {
+  .NewsImageSecondContainer {
+    width: 100%;
+  }
+  .bannerImageNews {
+    object-fit: cover;
+  }
+}
