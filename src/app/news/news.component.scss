@@ -68,7 +68,7 @@
 }
 
 .megnatiteNews {
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 50px;
   font-size: 16px;
   font-family: "Didact Gothic";
@@ -82,11 +82,66 @@
   width: 42%;
 }
 
+@media screen and (max-width: 1100px) {
+  .NewsImageSecondContainer2 {
+    // width: 100%;
+    h4 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .bannerImageNews {
+    object-fit: cover;
+  }
+  .megnatiteNews {
+    margin-top: 60px;
+  }
+  .bannerImageNews {
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
 @media screen and (max-width: 840px) {
+  .NewsBannerSecondContainer {
+    flex-wrap: wrap;
+  }
+  .NewsImageSecondContainer2 {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    h4 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
   .NewsImageSecondContainer {
     width: 100%;
   }
   .bannerImageNews {
     object-fit: cover;
+  }
+  .megnatiteNews {
+    margin-top: 60px;
+  }
+  .bannerImageNews {
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .NewsCard {
+    width: 90%;
+  }
+  .NewsImageSecondContainer2 {
+    height: auto;
+    overflow: auto;
   }
 }
