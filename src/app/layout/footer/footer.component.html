@@ -1,4 +1,4 @@
-<div class="FooterContainer">
+<div class="FooterContainer show">
   <div class="LinkContainer">
     <div class="AboutLinkContainer">
       <a>About</a>
@@ -20,6 +20,54 @@
       <a>Subscribe To Our News Letter</a>
       <input type="text" class="InputStyling" />
       <button class="subscribeButton">></button>
+    </div>
+  </div>
+</div>
+<div class="FooterContainer hide">
+  <div class="subscribeContainer">
+    <div class="InputContainer">
+      <a>Subscribe To Our News Letter</a>
+      <input type="text" class="InputStyling" />
+      <button class="subscribeButton">></button>
+    </div>
+  </div>
+  <div class="LinkContainer">
+    <div class="AboutLinkContainer">
+      <a class="footerDropdown" (click)="toggleDropdown()"
+        >About<fa-icon
+          *ngIf="!showAbout"
+          [icon]="faAngleRight"
+          style="font-size: 16px; color: grey; float: right"
+        ></fa-icon>
+        <fa-icon
+          *ngIf="showAbout"
+          [icon]="faAngleDown"
+          style="font-size: 16px; color: grey; float: right"
+        ></fa-icon>
+      </a>
+      <div *ngIf="showAbout" style="margin-top: 10px">
+        <b>News</b>
+        <b>Meganite</b>
+      </div>
+    </div>
+    <div class="ConnectLinkContainer">
+      <a class="footerDropdown" (click)="toggleDropdown()"
+        >Connect<fa-icon
+          *ngIf="!showConnect"
+          [icon]="faAngleRight"
+          style="font-size: 16px; color: grey; float: right"
+        ></fa-icon>
+        <fa-icon
+          [icon]="faAngleDown"
+          *ngIf="showConnect"
+          style="font-size: 16px; color: grey; float: right"
+        ></fa-icon>
+      </a>
+      <div *ngIf="showConnect" style="margin-top: 10px">
+        <b>Facebook</b>
+        <b>Instagram</b>
+        <b>Linkedin</b>
+      </div>
     </div>
   </div>
 </div>

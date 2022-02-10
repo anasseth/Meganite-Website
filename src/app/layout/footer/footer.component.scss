@@ -62,9 +62,69 @@ b {
   color: white;
   border: 1px solid transparent;
 }
-
+.hide {
+  display: none;
+  visibility: hidden;
+}
+.show {
+  display: flex;
+  visibility: visible;
+}
 @media screen and (max-width: 1100px) {
   .subscribeContainer {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .subscribeContainer {
+    margin-right: 0px;
+  }
+  .FooterContainer {
+    justify-content: center;
+    height: auto;
+  }
+  .InputStyling {
+    width: 90%;
+  }
+  .footerDropdown {
+    width: 95%;
+    color: black;
+    text-decoration: none;
+  }
+  .AboutLinkContainer {
+    margin-top: 10px;
+    height: auto;
+    margin-left: 20px;
+    width: 100%;
+    /* padding: 21px; */
+    // border-top: 2px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dbdbdb;
+  }
+  .ConnectLinkContainer {
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 10px;
+    height: auto;
+    /* padding: 21px; */
+    // border-top: 2px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dbdbdb;
+  }
+  .LinkContainer {
+    width: 85%;
+    margin-left: 0px;
+    padding-bottom: 20px;
+  }
+  .hide {
+    display: flex;
+    visibility: visible;
+  }
+  .show {
+    display: none;
+    visibility: hidden;
   }
 }
