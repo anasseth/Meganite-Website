@@ -1,6 +1,6 @@
 .HeaderMainContainer {
   background-color: white;
-  height: 60px;
+  height: 13%;
   position: fixed;
   border-bottom: 2px solid transparent;
   top: 0px;
@@ -20,6 +20,9 @@
 .hide {
   display: none;
   visibility: hidden;
+}
+.show {
+  visibility: visible;
 }
 
 .headerBarPositioningZero {
@@ -115,6 +118,7 @@ a:hover {
   z-index: 1;
   align-items: center;
   background-color: #e8e8e8;
+  margin-top: 4%;
 }
 .leftContainer {
   width: 50%;
@@ -162,19 +166,21 @@ a:hover {
 .headerImageContainer1 {
   height: 60%;
   margin-top: 5%;
+  width: 45%;
 }
 
 .headerImageContainer2 {
   height: 60%;
   margin-top: 5%;
+  width: 45%;
 }
 
 .headerImageContainerText {
   width: 100%;
   color: white;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 13px;
   margin-top: -10%;
   margin-left: 2%;
 }
@@ -201,6 +207,7 @@ a:hover {
 }
 @media screen and (max-width: 840px) {
   .HeaderMainContainer {
+    height: 90px;
     justify-content: space-between;
   }
   .LinkContainerOne {
@@ -222,5 +229,67 @@ a:hover {
   .hide {
     display: block;
     visibility: visible;
+  }
+
+  .dropdownHeaderContainer {
+    margin-top: 27px !important;
+    background-color: white;
+  }
+
+  .dropdownHeaderContainerMobile {
+    display: block;
+    background-color: white;
+  }
+  .dropdownLinkContainerMobile {
+    width: 100%;
+    margin-top: 60px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: max-content;
+  }
+  .dropdownDetailedOptionsMobile {
+    vertical-align: middle;
+    width: 100%;
+    // align-items: center;
+    margin: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      padding: 10px;
+      border: none;
+      padding-left: 20px;
+      width: 100%;
+      background: #f1f1f1;
+      margin-left: 0px;
+    }
+    a.bunchTwo {
+      background-color: #e7e7e7;
+    }
+    a.bunchThree {
+      background-color: #dbdbdb;
+    }
+    a.LocationMenu {
+      background-color: #ff1d31;
+      color: white;
+    }
+  }
+  .activeMenuClass {
+    background-color: #f1f1f1 !important;
+  }
+  .hide {
+    display: block;
+    visibility: visible;
+  }
+  .show {
+    visibility: hidden;
+  }
+  .popup {
+    width: 90% !important;
   }
 }

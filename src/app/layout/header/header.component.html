@@ -23,12 +23,18 @@
   "
 >
   <div class="LinkContainerOne">
-    <a class="hide"
+    <a class="hide" (click)="showDropdownMobile = !showDropdownMobile"
       ><fa-icon
         [icon]="faHamburger"
+        *ngIf="!this.showDropdownMobile"
         style="font-size: 25px; color: grey"
-      ></fa-icon
-    ></a>
+      ></fa-icon>
+      <fa-icon
+        [icon]="faAngleRight"
+        *ngIf="this.showDropdownMobile"
+        style="font-size: 25px; color: grey"
+      ></fa-icon>
+    </a>
     <a
       [ngClass]="
         activatedLink == 'Product' ? 'activeLink headerLink' : 'headerLink'
@@ -64,7 +70,10 @@
   </div>
 </div>
 
-<div class="dropdownHeaderContainer" *ngIf="this.activatedLink == 'Product'">
+<div
+  class="dropdownHeaderContainer show"
+  *ngIf="this.activatedLink == 'Product'"
+>
   <div class="leftContainer">
     <div class="dropdownLinkContainer">
       <a>Solid Surface</a>
@@ -74,12 +83,86 @@
   </div>
   <div class="rightContainer">
     <div class="headerImageContainer1">
-      <img src="../../../assets/Header (1).png" style="height: auto" alt="" />
+      <img
+        src="../../../assets/Header (1).png"
+        style="height: auto; width: 100%"
+        alt=""
+      />
       <div class="headerImageContainerText">THE MARBLE-INSPIRED TREND</div>
     </div>
     <div class="headerImageContainer2">
-      <img src="../../../assets/Header (2).png" style="height: auto" alt="" />
+      <img
+        src="../../../assets/Header (2).png"
+        style="height: auto; width: 100%"
+        alt=""
+      />
       <div class="headerImageContainerText">CATTAIL M038 ></div>
     </div>
   </div>
+</div>
+
+<div
+  class="dropdownHeaderContainer dropdownHeaderContainerMoble hide"
+  *ngIf="showDropdownMobile"
+>
+  <!-- <div class="leftContainer"> -->
+  <div class="dropdownLinkContainer dropdownLinkContainerMobile">
+    <a
+      (click)="switchMenu('Product')"
+      [ngClass]="this.activeMenu == 'Product' ? 'activeMenuClass' : ''"
+      >Product</a
+    >
+    <a
+      (click)="switchMenu('Specification')"
+      [ngClass]="this.activeMenu == 'Specification' ? 'activeMenuClass' : ''"
+      >Specification</a
+    >
+    <a
+      (click)="switchMenu('Inspiration')"
+      [ngClass]="this.activeMenu == 'Inspiration' ? 'activeMenuClass' : ''"
+      >Inspiration</a
+    >
+  </div>
+  <div class="dropdownDetailedOptions dropdownDetailedOptionsMobile">
+    <a
+      *ngFor="let item of getMenuItems()"
+      [ngClass]="
+        item.class == 'two'
+          ? 'bunchTwo'
+          : item.class == 'three'
+          ? 'bunchThree'
+          : ''
+      "
+      >{{ item.menuName
+      }}<fa-icon
+        [icon]="faAngleRight"
+        style="font-size: 13px; color: grey; float: right"
+      ></fa-icon
+    ></a>
+    <a class="bunchThree"
+      >News<fa-icon
+        [icon]="faAngleRight"
+        style="font-size: 13px; color: grey; float: right"
+      ></fa-icon
+    ></a>
+    <a class="bunchThree"
+      >Location<fa-icon
+        [icon]="faAngleRight"
+        style="font-size: 13px; color: grey; float: right"
+      ></fa-icon
+    ></a>
+    <a class="bunchThree"
+      >Contact<fa-icon
+        [icon]="faAngleRight"
+        style="font-size: 13px; color: grey; float: right"
+      ></fa-icon
+    ></a>
+    <a class="LocationMenu"
+      >Request Sample<fa-icon
+        [icon]="faCart"
+        style="font-size: 13px; color: white; float: right"
+      ></fa-icon
+    ></a>
+  </div>
+  <!-- </div> -->
 </div>

@@ -87,3 +87,40 @@ md-icon {
     vertical-align: middle;
   }
 }
+@media screen and (max-width: 840px) {
+  .popup {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popup {
+    width: 95%;
+  }
+
+  .countryContainer {
+    width: 30%;
+    h6 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .popup {
+    width: 95%;
+  }
+
+  .countryContainer {
+    width: 30%;
+    h6 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
