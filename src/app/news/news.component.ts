@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-news',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
+  faAngleDown = faAngleDown;
   constructor() { }
 
   ngOnInit(): void {

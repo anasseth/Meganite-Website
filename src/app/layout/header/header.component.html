@@ -1,5 +1,5 @@
 <div
-  class="HeaderMainContainer"
+  class="HeaderMainContainer slide-in-top show"
   style="background-color: #c0c0c0"
   *ngIf="this.global.showRegion"
 >
@@ -19,7 +19,7 @@
   [ngClass]="
     this.global.showRegion == false
       ? 'HeaderMainContainer headerBarPositioningZero'
-      : 'HeaderMainContainer headerBarPositioningBottom'
+      : 'HeaderMainContainer headerBarPositioningBottom slide-in-top'
   "
 >
   <div class="LinkContainerOne">
@@ -71,7 +71,7 @@
 </div>
 
 <div
-  class="dropdownHeaderContainer show"
+  class="dropdownHeaderContainer show slide-in-top"
   *ngIf="this.activatedLink == 'Product'"
 >
   <div class="leftContainer">
@@ -102,8 +102,13 @@
 </div>
 
 <div
-  class="dropdownHeaderContainer dropdownHeaderContainerMoble hide"
   *ngIf="showDropdownMobile"
+  style="z-index: 2"
+  [ngClass]="
+    showDropdownMobile == true
+      ? 'dropdownHeaderContainer dropdownHeaderContainerMoble hide slide-in-top'
+      : 'dropdownHeaderContainer dropdownHeaderContainerMoble hide'
+  "
 >
   <!-- <div class="leftContainer"> -->
   <div class="dropdownLinkContainer dropdownLinkContainerMobile">

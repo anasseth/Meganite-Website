@@ -55,23 +55,27 @@ export class HeaderComponent implements OnInit {
       name: "Product",
       items: [
         {
-          menuName: "Project",
+          menuName: "Solid Surface",
           class: "one"
         },
         {
-          menuName: "Franchise",
+          menuName: "Sinks",
           class: "one"
         },
         {
-          menuName: "Commercial",
+          menuName: "Antimicrobial AcryMed",
           class: "one"
         },
         {
-          menuName: "Education",
+          menuName: "Healthcare",
           class: "two"
         },
         {
-          menuName: "HealthCare",
+          menuName: "Antimicrobial",
+          class: "two"
+        },
+        {
+          menuName: "Franchise",
           class: "two"
         },
       ]

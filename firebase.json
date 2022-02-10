@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/meganite-website",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

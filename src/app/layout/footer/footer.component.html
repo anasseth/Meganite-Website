@@ -32,8 +32,8 @@
     </div>
   </div>
   <div class="LinkContainer">
-    <div class="AboutLinkContainer">
-      <a class="footerDropdown" (click)="toggleDropdown()"
+    <div class="AboutLinkContainer" (click)="toggleAbout()">
+      <a class="footerDropdown"
         >About<fa-icon
           *ngIf="!showAbout"
           [icon]="faAngleRight"
@@ -45,13 +45,17 @@
           style="font-size: 16px; color: grey; float: right"
         ></fa-icon>
       </a>
-      <div *ngIf="showAbout" style="margin-top: 10px">
+      <div
+        *ngIf="showAbout"
+        [ngClass]="showAbout ? 'slide-in-top' : ''"
+        style="margin-top: 10px"
+      >
         <b>News</b>
         <b>Meganite</b>
       </div>
     </div>
-    <div class="ConnectLinkContainer">
-      <a class="footerDropdown" (click)="toggleDropdown()"
+    <div class="ConnectLinkContainer" (click)="toggleConnect()">
+      <a class="footerDropdown"
         >Connect<fa-icon
           *ngIf="!showConnect"
           [icon]="faAngleRight"
@@ -63,7 +67,11 @@
           style="font-size: 16px; color: grey; float: right"
         ></fa-icon>
       </a>
-      <div *ngIf="showConnect" style="margin-top: 10px">
+      <div
+        *ngIf="showConnect"
+        [ngClass]="showConnect ? 'slide-in-top' : ''"
+        style="margin-top: 10px"
+      >
         <b>Facebook</b>
         <b>Instagram</b>
         <b>Linkedin</b>

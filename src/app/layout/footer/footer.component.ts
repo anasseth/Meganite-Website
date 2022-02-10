@@ -19,8 +19,10 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleDropdown() {
+  toggleAbout() {
     this.showAbout = !this.showAbout
+  }
+  toggleConnect() {
     this.showConnect = !this.showConnect
   }
 

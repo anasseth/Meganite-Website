@@ -82,6 +82,24 @@
   width: 42%;
 }
 
+.loadMoreContainer {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.loadMoreButton {
+  width: 70%;
+  height: 50%;
+  border: transparent;
+  background-color: transparent;
+  border-bottom: 2px solid grey;
+  color: grey;
+  margin: auto;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1100px) {
   .NewsImageSecondContainer2 {
     // width: 100%;
