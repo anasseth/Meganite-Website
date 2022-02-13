@@ -23,30 +23,33 @@ md-icon {
 }
 .popup {
   margin: 15% auto;
-  padding: 20px;
+  // padding: 20px;
   background: #fff;
   border-radius: 5px;
   width: 40%;
   position: relative;
   transition: all 2s ease-in-out;
-  background-color: #e2e2e2;
+  background-color: white;
 
   h2 {
-    font-size: 14px;
+    font-size: 13px;
     color: black;
-    font-family: "Didact Gothic";
-    text-transform: uppercase;
+    // font-family: "Didact Gothic";
+    font-family: "Roboto", sans-serif;
+    // text-transform: uppercase;
+    padding: 20px;
+    padding-bottom: 10px;
   }
 }
 .popup .close {
   position: absolute;
-  top: 20px;
+  top: 0px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: none;
-  color: #333;
+  color: #000000;
 }
 .popup .content {
   max-height: 30%;
@@ -58,6 +61,9 @@ md-icon {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: top;
+  padding: 20px;
+  width: 100%;
+  background-color: #f8f8f8;
 }
 
 .countryContainer {
@@ -66,20 +72,22 @@ md-icon {
   // height: 200px;
 
   h6 {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
-    font-weight: 700;
-    font-family: "Didact Gothic";
+    // font-weight: 700;
+    // font-family: "Didact Gothic";
+    font-family: "Roboto", sans-serif;
     margin: 0px;
     margin-top: 10px;
     margin-bottom: 30px;
   }
   p {
     // vertical-align: middle;
-    font-size: 16px;
+    font-size: 13px;
     color: black;
-    font-weight: 700;
-    font-family: "Didact Gothic";
+    // font-weight: 700;
+    // font-family: "Didact Gothic";
+    font-family: "Roboto", sans-serif;
     // text-transform: uppercase;
   }
   img {

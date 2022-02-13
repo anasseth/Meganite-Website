@@ -1,5 +1,6 @@
 * {
-  font-family: "Didact Gothic";
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .FooterContainer {
@@ -25,11 +26,13 @@
 .AboutLinkContainer {
   width: 100px;
   height: 100px;
+  font-size: 14px;
   //   border: 1px solid black;
 }
 .ConnectLinkContainer {
   width: 100px;
   height: 100px;
+  font-size: 14px;
   //   border: 1px solid black;
 }
 .subscribeContainer {
@@ -49,11 +52,19 @@ b {
 .InputContainer {
   width: fit-content;
   margin: auto;
+  font-size: 14px;
 }
 .InputStyling {
   width: 230px;
   height: 35px;
   border: 1px solid transparent;
+  margin-top: 20px;
+}
+.InputStyling::placeholder {
+  color: lightgrey;
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 20px;
 }
 .subscribeButton {
   height: 35px;
@@ -161,4 +172,3 @@ b {
     opacity: 1;
   }
 }
-

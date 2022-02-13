@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+// import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NgwWowService } from 'ngx-wow';
@@ -15,10 +16,12 @@ import { NgwWowService } from 'ngx-wow';
 export class HomeComponent implements OnInit {
 
   faEnvelop = faEnvelope;
-  faMapMarker = faMapMarker;
+  faMapMarker = faMapMarkerAlt;
   faCartPlus = faCartPlus;
   videoURL: string = "https://www.youtube.com/embed/-8XU8KyebTU";
   safeURL: any = "";
+  activeProduct = "";
+  showProduct:boolean=false;
 
   constructor(private _sanitizer: DomSanitizer, private wowService: NgwWowService) {
     // this.wowService.init();
@@ -52,6 +55,17 @@ export class HomeComponent implements OnInit {
       }
     },
     nav: true
+  }
+
+  clickProduct(event: any) {
+    this.showProduct = true;
+    console.log(event.target)
+    console.log(event.target.src.slice(event.target.src.indexOf("assets")))
+    this.activeProduct = "../../"+event.target.src.slice(event.target.src.indexOf("assets"))
+  }
+
+  hideProduct(){
+    this.showProduct = false
   }
 
 }

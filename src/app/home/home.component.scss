@@ -33,12 +33,21 @@
 
   h1 {
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 36px;
   }
   h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     color: white;
     font-size: 18px;
+  }
+  h3 {
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -54,6 +63,8 @@ h4 {
   bottom: 50%;
   width: 50px;
   height: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 .HomeBannerSecondContainer {
   display: flex;
@@ -68,8 +79,14 @@ h4 {
   left: 3%;
   h1 {
     color: white;
-    font-weight: 700;
-    font-size: 35px;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 15px;
   }
 }
 .HomeBannerThirdContainer {
@@ -89,22 +106,29 @@ h4 {
   position: relative;
 }
 .HomeTextFourthContainer {
-  width: 90%;
+  width: 55%;
   position: absolute;
-  bottom: 40%;
-  left: 3%;
+  bottom: 20%;
+  left: 6%;
   h1 {
     color: rgb(61, 61, 61);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 30px;
   }
   h4 {
     font-size: 16px;
-    color: rgb(61, 61, 61);
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   a {
-    color: rgb(61, 61, 61);
-    margin-top: 10px;
+    color: black;
+    text-decoration: underline;
+    margin-top: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
 }
 .HomeBannerFifthContainer {
@@ -133,7 +157,7 @@ h4 {
 }
 .slide {
   background-color: white;
-  border: 1px solid rgb(245, 245, 245);
+  border: 1px solid rgb(255, 255, 255);
   height: 400px;
   text-align: center;
   img {
@@ -144,7 +168,8 @@ h4 {
   b {
     display: block;
     margin: auto;
-    font-weight: 900;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
   }
   a {
     display: block;
@@ -178,7 +203,10 @@ h4 {
     margin-right: 10px;
     margin-left: 10px;
     color: transparent;
-    font-family: "Didact Gothic";
+    font-size: 14px;
+    // font-family: "Didact Gothic";
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
   }
 }
 
@@ -201,6 +229,21 @@ h4 {
   position: absolute !important;
   top: 37% !important;
   left: 0 !important;
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.productImageShowcase {
+  background-color: black;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1100px) {
@@ -251,6 +294,12 @@ h4 {
     h4 {
       font-size: 14px;
     }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .productImageShowcase {
+    width: 33%;
   }
 }
 
@@ -317,9 +366,48 @@ h4 {
     object-position: 30%;
   }
 }
+@media screen and (max-width: 748px) {
+  .productImageShowcase {
+    width: 50%;
+  }
+  .HomeTextFourthContainer {
+    width: 90%;
+  }
+}
 
 @media screen and (max-width: 485px) {
   .imageContainerGeneral {
     height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .productImageShowcase {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
   }
 }
