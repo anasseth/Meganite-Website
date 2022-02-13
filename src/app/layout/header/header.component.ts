@@ -4,6 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { ThrowStmt } from '@angular/compiler';
 // import { faSquareX } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -112,7 +113,7 @@ export class HeaderComponent implements OnInit {
   }
 
   showCountryPopup() {
-    this.global.showPopup = true
+    this.global.showPopup = !this.global.showPopup
   }
 
   switchMenu(keyName: string) {
@@ -122,13 +123,19 @@ export class HeaderComponent implements OnInit {
   }
 
   getMenuItems() {
+    this.global.showRegion = false;
     console.log("KeyName : ", this.activeMenu)
     console.log(this.dropdownMenu.filter(x => x.name.toLowerCase().toString() == this.activeMenu.toLowerCase().toString())[0].items)
     return this.dropdownMenu.filter(x => x.name.toLowerCase().toString() == this.activeMenu.toLowerCase().toString())[0].items
   }
 
   showRegionPopup() {
-    this.global.showRegion = !this.global.showRegion
+    if (this.global.showRegion == false) {
+      this.global.showRegion = true;
+    }
+    else {
+      this.global.showRegion = false;
+    }
   }
 
   showDropdown() {
