@@ -2,11 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-// import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NgwWowService } from 'ngx-wow';
-
 
 @Component({
   selector: 'app-home',
@@ -21,10 +19,40 @@ export class HomeComponent implements OnInit {
   videoURL: string = "https://www.youtube.com/embed/-8XU8KyebTU";
   safeURL: any = "";
   activeProduct = "";
-  showProduct:boolean=false;
+  activeIndex = -1;
+  showProduct: boolean = false;
+  productData = [
+    {
+      _3dImage: "../../assets/product-1.png",
+      _2dImage: "../../assets/product-1-3d.png"
+    },
+    {
+      _3dImage: "../../assets/product-2.png",
+      _2dImage: "../../assets/product-1-3d.png"
+    },
+    {
+      _3dImage: "../../assets/product-3.png",
+      _2dImage: "../../assets/product-1-3d.png"
+    },
+    {
+      _3dImage: "../../assets/product-4.png",
+      _2dImage: "../../assets/product-1-3d.png"
+    },
+    {
+      _3dImage: "../../assets/product-1.png",
+      _2dImage: "../../assets/product-1-3d.png"
+    },
+    {
+      _3dImage: "../../assets/product-2.png",
+      _2dImage: "../../assets/product-1-3d.png"
+    },
+    {
+      _3dImage: "../../assets/product-1.png",
+      _2dImage: "../../assets/product-1-3d.png"
+    }
+  ]
 
   constructor(private _sanitizer: DomSanitizer, private wowService: NgwWowService) {
-    // this.wowService.init();
     this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(this.videoURL);
   }
 
@@ -57,14 +85,14 @@ export class HomeComponent implements OnInit {
     nav: true
   }
 
-  clickProduct(event: any) {
+  clickProduct(event: any, i: any) {
     this.showProduct = true;
-    console.log(event.target)
-    console.log(event.target.src.slice(event.target.src.indexOf("assets")))
-    this.activeProduct = "../../"+event.target.src.slice(event.target.src.indexOf("assets"))
+    this.activeIndex = i;
+    this.activeProduct = "../../" + event.target.src.slice(event.target.src.indexOf("assets"))
   }
 
-  hideProduct(){
+  hideProduct() {
+    this.activeIndex = -1
     this.showProduct = false
   }
 

@@ -119,88 +119,35 @@
 
 <div style="position: relative">
   <owl-carousel-o [options]="customOptions" style="margin-top: 200px">
-    <ng-template carouselSlide>
+    <ng-template
+      carouselSlide
+      *ngFor="let product of productData; let i = index"
+    >
       <div class="slide">
         <img
-          src="../../assets/product-1.png"
-          (mouseenter)="clickProduct($event)"
-          (mouseout)="hideProduct()"
+          [src]="product._3dImage"
+          (mouseenter)="clickProduct($event, i)"
           alt=""
+          *ngIf="activeIndex != i"
         />
-        <br />
-        <b>MT.CARRAR</b>
-        <a>M020</a>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
+        <div *ngIf="activeIndex != i">
+          <br />
+          <b>MT.CARRAR</b>
+          <a>M020</a>
+        </div>
         <img
-          src="../../assets/product-2.png"
-          (mouseenter)="clickProduct($event)"
-          (mouseout)="hideProduct()"
+          *ngIf="showProduct && activeIndex == i"
+          [src]="this.productData[i]._2dImage"
           alt=""
-        />
-        <br />
-        <b>HAZEL CREAM</b>
-        <a>M039</a>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img
-          src="../../assets/product-3.png"
-          (mouseenter)="clickProduct($event)"
+          style="width: 100%; height: 100%; margin: 0"
           (mouseout)="hideProduct()"
-          alt=""
         />
-        <br />
-        <b>PINECONE</b>
-        <a>M036</a>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img
-          src="../../assets/product-4.png"
-          (mouseenter)="clickProduct($event)"
-          (mouseout)="hideProduct()"
-          alt=""
-        />
-        <br />
-        <b>MR.GRIGIO</b>
-        <a>M020</a>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img
-          src="../../assets/product-1.png"
-          (mouseenter)="clickProduct($event)"
-          (mouseout)="hideProduct()"
-          alt=""
-        />
-        <br />
-        <b>MT.CARRAR</b>
-        <a>M020</a>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slide">
-        <img
-          src="../../assets/product-2.png"
-          (mouseenter)="clickProduct($event)"
-          (mouseout)="hideProduct()"
-          alt=""
-        />
-        <br />
-        <b>HAZEL CREAM</b>
-        <a>M039</a>
       </div>
     </ng-template>
   </owl-carousel-o>
-  <div *ngIf="showProduct" class="scale-in-center productImageShowcase">
+  <!-- <div *ngIf="showProduct" class="scale-in-center productImageShowcase">
     <img [src]="this.activeProduct" alt="" style="width: 100%; height: 100%" />
-  </div>
+  </div> -->
 </div>
 
 <div class="HomeBannerFourthContainer">
