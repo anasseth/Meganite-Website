@@ -138,6 +138,7 @@
         <img
           *ngIf="showProduct && activeIndex == i"
           [src]="this.productData[i]._2dImage"
+          class="scale-in-center"
           alt=""
           style="width: 100%; height: 100%; margin: 0"
           (mouseout)="hideProduct()"

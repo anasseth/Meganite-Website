@@ -304,6 +304,9 @@ h4 {
 }
 
 @media screen and (max-width: 840px) {
+  .slide {
+    height: 350px;
+  }
   .HomeBannerSecondContainer {
     flex-wrap: wrap;
   }
@@ -373,15 +376,30 @@ h4 {
   .HomeTextFourthContainer {
     width: 90%;
   }
+  .slide {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .slide {
+    height: 350px;
+  }
 }
 
 @media screen and (max-width: 485px) {
+  .slide {
+    height: 300px;
+  }
   .imageContainerGeneral {
     height: auto;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .slide {
+    height: 400px;
+  }
   .productImageShowcase {
     width: 100%;
   }
