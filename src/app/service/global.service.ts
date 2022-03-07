@@ -9,6 +9,7 @@ export class GlobalService {
   showRegion: boolean = false;
   addedToCart: any = [];
   activeImagePath: string = "../../assets/product-Detail-HD.png"
+  activeImagePath2: string = "../../assets/product-Detail-HD.png"
 
   constructor() { }
 }
