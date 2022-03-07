@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
 
 const routes: Routes = [
   {
@@ -11,11 +13,19 @@ const routes: Routes = [
   {
     path: 'news',
     component: NewsComponent,
+  },
+  {
+    path: 'products',
+    component: ProductShowcaseComponent,
+  },
+  {
+    path: 'product-detail',
+    component: ProductDetailComponent,
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

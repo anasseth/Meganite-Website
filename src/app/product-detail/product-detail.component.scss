@@ -1,0 +1,216 @@
+.ProductMainPage {
+  margin-top: 80px;
+  width: 100%;
+  position: absolute;
+  height: max-content;
+}
+.ProductMainPath {
+  width: 100%;
+  background-color: #f8f8f8;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.ProductFilter {
+  width: 100%;
+  color: black;
+  background-color: #f1f1f1;
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.FilterDropdown {
+  width: 33%;
+  height: 100%;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 15px;
+}
+.FD-1 {
+  background-color: #ececec;
+}
+.FD-2 {
+  background-color: #f1f1f1;
+}
+.FD-3 {
+  background-color: #f5f5f5;
+}
+.ProductPageImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.SolidImageOne {
+  width: 100%;
+  height: auto;
+}
+.ProductPageImage2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.LeftImage {
+  width: 50%;
+}
+.RightImage {
+  width: 50%;
+}
+.MovementSeriesContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: fit-content;
+}
+.ProductsContainerOne {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.SmallPiece {
+  width: 25%;
+  height: 450px;
+  background-color: white;
+  border: 2px solid #f8f8f8;
+  text-align: center;
+  img {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 280px;
+  }
+  b {
+    display: block;
+    margin: auto;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  a {
+    display: block;
+    margin: auto;
+    color: lightgray;
+  }
+}
+.LargePiece {
+  width: 50%;
+  height: 450px;
+  background-color: white;
+  border: 2px solid #f8f8f8;
+  text-align: center;
+  img {
+    margin: auto;
+    margin-top: 60px;
+    width: 80%;
+    // max-width: 280px;
+  }
+  b {
+    display: block;
+    margin: auto;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  a {
+    display: block;
+    margin: auto;
+    color: lightgray;
+  }
+}
+
+.TerrazoSeriresContainer {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.TSCLeft {
+  width: 50%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #888888;
+}
+.TSCRight {
+  width: 50%;
+  height: 100%;
+  max-height: 450px;
+}
+
+.XSeriresContainer {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.XSCRight {
+  width: 50%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #505050;
+}
+.XSCLeft {
+  width: 50%;
+  height: 100%;
+  max-height: 450px;
+}
+
+.AcryContainer {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ACRight {
+  width: 50%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #f0f0f0;
+}
+.ACLeft {
+  width: 50%;
+  height: 100%;
+  max-height: 450px;
+}
+
+.slide {
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  height: 400px;
+  text-align: center;
+  img {
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
+  }
+  b {
+    display: block;
+    margin: auto;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  a {
+    display: block;
+    margin: auto;
+    color: lightgray;
+  }
+}

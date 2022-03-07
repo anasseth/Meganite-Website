@@ -11,6 +11,8 @@ import { NewsComponent } from './news/news.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     HomeComponent,
     NewsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductShowcaseComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

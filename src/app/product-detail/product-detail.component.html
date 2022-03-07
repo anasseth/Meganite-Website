@@ -1,0 +1,90 @@
+<div class="ProductMainPage">
+  <div class="ProductMainPath">Home / Prodcut / Solid Surface</div>
+
+  <div class="ProductPageImage2">
+    <div class="LeftImage">
+      <img [src]="this._global.activeImagePath" style="width: 100%" />
+    </div>
+    <div class="RightImage" style="background-color: white">
+      <!-- <img
+        src="../../assets/Product-Detail/PD-Image-2.png"
+        style="width: 100%"
+      /> -->
+    </div>
+  </div>
+
+  <div class="ProductPageImage2">
+    <div class="LeftImage">
+      <img
+        src="../../assets/Product-Detail/PD-Image-1.png"
+        style="width: 100%"
+      />
+    </div>
+    <div class="RightImage">
+      <img
+        src="../../assets/Product-Detail/PD-Image-2.png"
+        style="width: 100%"
+      />
+    </div>
+  </div>
+
+  <div class="ProductPageImage">
+    <img
+      src="../../assets/Product-Detail/PD-Image-3.png"
+      class="SolidImageOne"
+    />
+  </div>
+
+  <div class="ProductPageImage2">
+    <div class="LeftImage">
+      <img
+        src="../../assets/Product-Detail/PD-Image-4.png"
+        style="width: 100%"
+      />
+    </div>
+    <div class="RightImage">
+      <img
+        src="../../assets/Product-Detail/PD-Image-5.png"
+        style="width: 100%"
+      />
+    </div>
+  </div>
+
+  <div class="ProductPageImage">
+    <img
+      src="../../assets/Product-Detail/PD-Image-6.png"
+      class="SolidImageOne"
+    />
+  </div>
+  <div style="position: relative">
+    <owl-carousel-o [options]="customOptions" style="margin-top: 200px">
+      <ng-template
+        carouselSlide
+        *ngFor="let product of productData; let i = index"
+      >
+        <div class="slide">
+          <img
+            [src]="product._3dImage"
+            (mouseenter)="clickProduct($event, i)"
+            alt=""
+            *ngIf="activeIndex != i"
+          />
+          <div *ngIf="activeIndex != i">
+            <br />
+            <b>MT.CARRAR</b>
+            <a>M020</a>
+          </div>
+          <img
+            *ngIf="showProduct && activeIndex == i"
+            [src]="this.productData[i]._2dImage"
+            class="scale-in-center"
+            alt=""
+            style="width: 100%; height: 100%; margin: 0"
+            (mouseout)="hideProduct()"
+          />
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+  <app-footer></app-footer>
+</div>

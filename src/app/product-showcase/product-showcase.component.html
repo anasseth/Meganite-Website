@@ -1,0 +1,367 @@
+<div class="ProductMainPage">
+  <div class="ProductMainPath">Home / Prodcut / Solid Surface</div>
+  <div class="ProductFilter">
+    <div class="FilterDropdown FD-1" (click)="selectFilter('Collection')">
+      Filter By Collections
+      <fa-icon
+        [icon]="Drop"
+        *ngIf="selectedFilter != 'Collection'"
+        class="DropIcon"
+      ></fa-icon>
+      <fa-icon
+        [icon]="Up"
+        *ngIf="showFilter && selectedFilter == 'Collection'"
+        class="DropIcon"
+      ></fa-icon>
+    </div>
+    <div class="FilterDropdown FD-2" (click)="selectFilter('Color')">
+      Filter By Color Hue
+      <fa-icon
+        [icon]="Drop"
+        *ngIf="selectedFilter != 'Color'"
+        class="DropIcon"
+      ></fa-icon>
+      <fa-icon
+        [icon]="Up"
+        *ngIf="showFilter && selectedFilter == 'Color'"
+        class="DropIcon"
+      ></fa-icon>
+    </div>
+    <div class="FilterDropdown FD-3" (click)="selectFilter('Size')">
+      Filter By Size
+      <fa-icon
+        [icon]="Drop"
+        *ngIf="selectedFilter != 'Size'"
+        class="DropIcon"
+      ></fa-icon>
+      <fa-icon
+        [icon]="Up"
+        *ngIf="showFilter && selectedFilter == 'Size'"
+        class="DropIcon"
+      ></fa-icon>
+    </div>
+  </div>
+  <div class="ProductFilterOption" *ngIf="showFilter">
+    <div
+      class="Options"
+      *ngFor="let opt of filterOptionsData()"
+      (click)="addSelectedFilter(opt)"
+    >
+      {{ opt }}
+      <b style="float: right">x</b>
+    </div>
+  </div>
+  <div class="ProductFilterOption2" *ngIf="appliedFilter.length > 0">
+    <div
+      class="Options2"
+      *ngFor="let opt of appliedFilter"
+      (click)="removeAddedFilter(opt)"
+    >
+      {{ opt }}
+      <b style="float: right">x</b>
+    </div>
+  </div>
+
+  <div class="ProductPageImage" *ngIf="appliedFilter.length == 0">
+    <img src="../../assets/Product/Solid-1.png" class="SolidImageOne" />
+    <div class="PPITextContainer">
+      <h1>Versatility, thermoformability, easy maintenance</h1>
+      <p>Solid Surface Collection</p>
+    </div>
+  </div>
+  <div class="ProductPageImage2" *ngIf="appliedFilter.length == 0">
+    <div class="LeftImage">
+      <img src="../../assets/Product/Solid-2.png" style="width: 100%" />
+      <div class="PPI2TextContainer">
+        <p>
+          Thanks to the continous innovation, Meganite® works with industry's
+          leading architects and designers, and industry sector experts to offer
+          a diverse range of trend-driven designs and colors. Meganite® solid
+          surface can be used in harmonious between horizontal and vertical
+          applications.
+        </p>
+        <p>Find your favorite!</p>
+      </div>
+    </div>
+    <div class="RightImage">
+      <img src="../../assets/Product/Solid-3.png" style="width: 100%" />
+    </div>
+  </div>
+
+  <div class="MovementSeriesContainer" *ngIf="appliedFilter.length == 0">
+    <img
+      src="../../assets/Product/MovementSeries.png"
+      style="width: 100%; height: auto"
+    />
+    <div class="MSCTextContainer">
+      <h1>Movement Series</h1>
+      <p>
+        Inspired by luxurious natural stone, highlighted by natural veins
+        throughout the whole slab
+      </p>
+      <button>VIEW COLORS</button>
+    </div>
+  </div>
+
+  <div class="ProductsContainerOne">
+    <div
+      class="{{ product.className }}"
+      *ngFor="let product of ProductImageBundle"
+      (mouseenter)="clickProduct(product.imgSrc)"
+    >
+      <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
+      <div *ngIf="activeProduct != product.imgSrc">
+        <br />
+        <b>{{ product.materialName }}</b>
+        <a>{{ product.code }}</a>
+      </div>
+      <fa-icon
+        [icon]="Check"
+        class="CheckIcon"
+        *ngIf="checkProductInCart(product) > 0"
+      ></fa-icon>
+      <div
+        style="height: 100%; position: relative"
+        *ngIf="showProduct && activeProduct == product.imgSrc"
+      >
+        <img
+          [src]="product.largeImgSrc"
+          class="scale-in-center"
+          alt=""
+          style="
+            height: 100%;
+            margin: 0;
+            object-fit: fill;
+            max-width: 100% !important;
+            width: 100% !important;
+          "
+          (mouseout)="hideProduct()"
+        />
+        <div class="productContainer slide-in-bottom">
+          <button
+            (click)="addToCart(product)"
+            [ngClass]="checkProductInCart(product) > 0 ? 'addedToCart' : ''"
+          >
+            {{
+              checkProductInCart(product) > 0
+                ? "ADDED TO CART"
+                : "REQUEST SAMPLE"
+            }}
+          </button>
+          <button (click)="checkProductDetail(product)">VIEW DETAILS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="TerrazoSeriresContainer">
+    <div class="TSCLeft">
+      <div class="TSCLTextContainer">
+        <h1>Terrazzo Series</h1>
+        <p>
+          True Terrazzo captures the classic true look of natural terrazzo into
+          modern design that reveals an extraordinary aesthetic potential and
+          unprecedented versatility in daily use.
+        </p>
+      </div>
+    </div>
+    <div class="TSCRight">
+      <img
+        src="../../assets/Product/TSC-Img.png"
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
+    </div>
+  </div>
+
+  <div class="ProductsContainerOne">
+    <div
+      class="{{ product.className }}"
+      *ngFor="let product of ProductImageBundle2"
+      (mouseenter)="clickProduct(product.imgSrc)"
+    >
+      <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
+      <div *ngIf="activeProduct != product.imgSrc">
+        <br />
+        <b>{{ product.materialName }}</b>
+        <a>{{ product.code }}</a>
+      </div>
+      <fa-icon
+        [icon]="Check"
+        class="CheckIcon"
+        *ngIf="checkProductInCart(product) > 0"
+      ></fa-icon>
+      <div
+        style="height: 100%; position: relative"
+        *ngIf="showProduct && activeProduct == product.imgSrc"
+      >
+        <img
+          [src]="product.largeImgSrc"
+          class="scale-in-center"
+          alt=""
+          style="
+            height: 100%;
+            margin: 0;
+            object-fit: fill;
+            max-width: 100% !important;
+            width: 100% !important;
+          "
+          (mouseout)="hideProduct()"
+        />
+        <div class="productContainer slide-in-bottom">
+          <button
+            (click)="addToCart(product)"
+            [ngClass]="checkProductInCart(product) > 0 ? 'addedToCart' : ''"
+          >
+            {{
+              checkProductInCart(product) > 0
+                ? "ADDED TO CART"
+                : "REQUEST SAMPLE"
+            }}
+          </button>
+          <button (click)="checkProductDetail(product)">VIEW DETAILS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="XSeriresContainer">
+    <div class="XSCRight">
+      <img
+        src="../../assets/Product/XSC-Img.png"
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
+    </div>
+    <div class="XSCLeft">
+      <div class="XSCRTextContainer">
+        <h1>X - Series</h1>
+        <p>
+          X series - an enhanced collection of dark colors that significantly
+          reduces the appearance of scratches and gives dark colors a richer
+          appearance.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ProductsContainerOne">
+    <div
+      class="{{ product.className }}"
+      *ngFor="let product of ProductImageBundle3"
+      (mouseenter)="clickProduct(product.imgSrc)"
+    >
+      <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
+      <div *ngIf="activeProduct != product.imgSrc">
+        <br />
+        <b>{{ product.materialName }}</b>
+        <a>{{ product.code }}</a>
+      </div>
+      <fa-icon
+        [icon]="Check"
+        class="CheckIcon"
+        *ngIf="checkProductInCart(product) > 0"
+      ></fa-icon>
+      <div
+        style="height: 100%; position: relative"
+        *ngIf="showProduct && activeProduct == product.imgSrc"
+      >
+        <img
+          [src]="product.largeImgSrc"
+          class="scale-in-center"
+          alt=""
+          style="
+            height: 100%;
+            margin: 0;
+            object-fit: fill;
+            max-width: 100% !important;
+            width: 100% !important;
+          "
+          (mouseout)="hideProduct()"
+        />
+        <div class="productContainer slide-in-bottom">
+          <button
+            (click)="addToCart(product)"
+            [ngClass]="checkProductInCart(product) > 0 ? 'addedToCart' : ''"
+          >
+            {{
+              checkProductInCart(product) > 0
+                ? "ADDED TO CART"
+                : "REQUEST SAMPLE"
+            }}
+          </button>
+          <button (click)="checkProductDetail(product)">VIEW DETAILS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="AcryContainer">
+    <div class="ACLeft">
+      <div class="ACRTextContainer">
+        <h1>AcryMed</h1>
+        <p>
+          Inspired by luxurious natural stone, highlighted by natural veins
+          throughout the whole slab, every color in the Movement Series is
+          sophiscated and beloved by designers.
+        </p>
+      </div>
+    </div>
+    <div class="ACRight">
+      <img
+        src="../../assets/Product/Acry-Img.png"
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
+    </div>
+  </div>
+
+  <div class="ProductsContainerOne">
+    <div
+      class="{{ product.className }}"
+      *ngFor="let product of ProductImageBundle4"
+      (mouseenter)="clickProduct(product.imgSrc)"
+    >
+      <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
+      <div *ngIf="activeProduct != product.imgSrc">
+        <br />
+        <b>{{ product.materialName }}</b>
+        <a>{{ product.code }}</a>
+      </div>
+      <fa-icon
+        [icon]="Check"
+        class="CheckIcon"
+        *ngIf="checkProductInCart(product) > 0"
+      ></fa-icon>
+      <div
+        style="height: 100%; position: relative"
+        *ngIf="showProduct && activeProduct == product.imgSrc"
+      >
+        <img
+          [src]="product.largeImgSrc"
+          class="scale-in-center"
+          alt=""
+          style="
+            height: 100%;
+            margin: 0;
+            object-fit: fill;
+            max-width: 100% !important;
+            width: 100% !important;
+          "
+          (mouseout)="hideProduct()"
+        />
+        <div class="productContainer slide-in-bottom">
+          <button
+            (click)="addToCart(product)"
+            [ngClass]="checkProductInCart(product) > 0 ? 'addedToCart' : ''"
+          >
+            {{
+              checkProductInCart(product) > 0
+                ? "ADDED TO CART"
+                : "REQUEST SAMPLE"
+            }}
+          </button>
+          <button (click)="checkProductDetail(product)">VIEW DETAILS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
