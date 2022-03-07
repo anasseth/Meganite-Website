@@ -60,9 +60,53 @@
 }
 .LeftImage {
   width: 50%;
+  border: 1px solid #f8f8f8;
 }
 .RightImage {
   width: 50%;
+  border: 1px solid #f8f8f8;
+}
+.TextContainer {
+  margin: auto;
+  width: 66%;
+  margin-top: 50px;
+  height: 80%;
+  h1 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  a {
+    border-bottom: 1px solid #c0c0c0;
+    width: 100%;
+    padding-top: 12px;
+    display: block;
+    padding-bottom: 12px;
+    font-size: 14px;
+    position: relative;
+    transition-duration: 0.3s;
+  }
+  a:hover {
+    color: #ff1d31;
+    border-bottom: 1px solid #ff1d31;
+    transition-duration: 0.3s;
+  }
+}
+.Code {
+  color: #c0c0c0;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  // margin-top: -10px;
+}
+.TagText {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+}
+.DropIcon {
+  color: inherit;
+  position: absolute;
+  right: 0px;
 }
 .MovementSeriesContainer {
   display: flex;

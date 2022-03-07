@@ -4,6 +4,8 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { GlobalService } from '../service/global.service';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product-detail',
@@ -12,9 +14,11 @@ import { GlobalService } from '../service/global.service';
 })
 export class ProductDetailComponent implements OnInit {
 
+  Download=faDownload
   faEnvelop = faEnvelope;
   faMapMarker = faMapMarkerAlt;
   faCartPlus = faCartPlus;
+  Right = faAngleRight;
   videoURL: string = "https://www.youtube.com/embed/-8XU8KyebTU";
   safeURL: any = "";
   activeProduct = "";
@@ -51,7 +55,7 @@ export class ProductDetailComponent implements OnInit {
     }
   ]
 
-  constructor( public _global:GlobalService) { }
+  constructor(public _global: GlobalService) { }
 
   ngOnInit(): void {
   }
