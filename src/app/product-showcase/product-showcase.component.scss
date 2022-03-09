@@ -35,22 +35,36 @@
   align-items: center;
   cursor: pointer;
 }
+.PFOBackground1 {
+  background-color: #ececec;
+}
+.PFOBackground2 {
+  background-color: #f1f1f1;
+}
+.PFOBackground3 {
+  background-color: #f5f5f5;
+}
 .Options {
-  background-color: white;
+  // background-color: white;
   width: max-content;
-  margin-right: 10px;
+  margin-right: 25px;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   padding-left: 4px;
-  padding-right: 2px;
+  padding-right: 7px;
   cursor: pointer;
 
   b {
     font-family: monospace;
     font-weight: 300;
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 13px;
     // float: right;
   }
+}
+.OptionBack {
+  background-color: white !important;
 }
 
 .ProductFilterOption2 {
@@ -67,17 +81,19 @@
 .Options2 {
   background-color: #ececec;
   width: max-content;
-  margin-right: 10px;
+  margin-right: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   padding-left: 4px;
-  padding-right: 2px;
+  padding-right: 7px;
   cursor: pointer;
 
   b {
     font-family: monospace;
     font-weight: 300;
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 13px;
     // float: right;
   }
 }
@@ -420,6 +436,438 @@
   color: #505050;
   position: absolute;
   right: 20px;
+}
+
+.Mobile {
+  display: none;
+  visibility: hidden;
+}
+
+.Desktop {
+  // display: block;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1400px) {
+  .SmallPiece {
+    height: 400px;
+  }
+  .LargePiece {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .TerrazoSeriresContainer {
+    height: 400px;
+  }
+  .XSeriresContainer {
+    height: 400px;
+  }
+  .AcryContainer {
+    height: 400px;
+  }
+  .SmallPiece {
+    height: 350px;
+  }
+  .LargePiece {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .TerrazoSeriresContainer {
+    height: 300px;
+  }
+  .XSeriresContainer {
+    height: 300px;
+  }
+  .AcryContainer {
+    height: 300px;
+  }
+  .SmallPiece {
+    height: 300px;
+  }
+  .LargePiece {
+    height: 300px;
+  }
+
+  .TSCLTextContainer,
+  .ACRTextContainer,
+  .XSCRTextContainer {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .PPITextContainer {
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .PPI2TextContainer {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .PPITextContainer {
+    width: 50%;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-weight: 300 !important;
+      font-size: 18px;
+    }
+  }
+
+  .PPI2TextContainer {
+    bottom: 60px;
+    left: 30px;
+    p {
+      font-weight: 300;
+      font-size: 18px;
+    }
+  }
+
+  .MSCTextContainer {
+    position: absolute;
+    margin: auto;
+    margin-top: 4%;
+    text-align: center;
+    width: 40%;
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+      width: 60%;
+      margin-top: 0px;
+    }
+  }
+
+  .LargePiece {
+    height: 250px;
+    img {
+      margin-top: 10px;
+    }
+    b {
+      font-size: 14px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .SmallPiece {
+    height: 250px;
+    img {
+      margin-top: 10px;
+    }
+    b {
+      font-size: 14px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .productContainer {
+    button {
+      margin: 5px;
+      font-size: 10px;
+      outline: none;
+      font-weight: 500;
+      background-color: #ffffff;
+      border: none;
+      color: #ff1d31;
+      padding-left: 5px;
+      padding-right: 5px;
+      transition-duration: 0.3s;
+    }
+  }
+
+  .TerrazoSeriresContainer {
+    height: 250px;
+  }
+  .XSeriresContainer {
+    height: 250px;
+  }
+  .AcryContainer {
+    height: 250px;
+  }
+
+  .TSCLTextContainer,
+  .ACRTextContainer,
+  .XSCRTextContainer {
+    position: absolute;
+    left: 30px;
+    width: 85%;
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .dropdownDetailedOptionsMobile {
+    vertical-align: middle;
+    width: 100%;
+    // align-items: center;
+    margin: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      padding: 15px;
+      border: none;
+      padding-left: 40px;
+      width: 100%;
+      background-color: #ececec;
+      margin-left: 0px;
+      text-decoration: none;
+      color: black;
+    }
+    a.bunchTwo {
+      background-color: #f1f1f1;
+    }
+    a.bunchThree {
+      background-color: #f5f5f5;
+    }
+  }
+
+  .activeFilter {
+    background-color: white !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  .Done {
+    width: 150px;
+    background-color: #ff1d31;
+    font-weight: 500;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+  }
+  .Clear {
+    width: 150px;
+    background-color: white;
+    font-weight: 500;
+    color: black;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+  }
+
+  .Desktop {
+    display: none;
+    visibility: hidden;
+  }
+
+  .Mobile {
+    // display: block;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .MSCTextContainer {
+    width: 60%;
+  }
+  .PPITextContainer {
+    h1 {
+      font-size: 24px !important;
+    }
+    p {
+      font-size: 14px !important;
+    }
+  }
+
+  .PPI2TextContainer {
+    bottom: 4%;
+    left: 4%;
+    p {
+      font-size: 16px !important;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .SmallPiece {
+    height: 220px;
+    a {
+      font-size: 13px;
+    }
+    b {
+      font-size: 13px;
+    }
+  }
+  .LargePiece {
+    height: 220px;
+    a {
+      font-size: 13px;
+    }
+    b {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .SolidImageOne {
+    height: 325px;
+    object-fit: cover;
+  }
+  .PPITextContainer {
+    width: 60%;
+    bottom: 5%;
+    left: 5%;
+    h1 {
+      font-size: 24px !important;
+    }
+    p {
+      font-size: 14px !important;
+    }
+  }
+
+  .PPI2TextContainer {
+    bottom: 4%;
+    left: 4%;
+    width: 40%;
+    p {
+      font-size: 12px !important;
+      font-weight: 300;
+    }
+  }
+
+  .FilterDropdown {
+    font-size: 12px;
+  }
+  .ProductMainPath {
+    font-size: 12px;
+  }
+
+  .dropdownDetailedOptionsMobile {
+    a {
+      font-size: 14px;
+    }
+  }
+
+  .MovementSeriesContainer {
+    height: 150px;
+  }
+
+  .MSCTextContainer {
+    margin-top: 3%;
+    width: 70%;
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 13px;
+    }
+    button {
+      height: 22px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .TSCLTextContainer,
+  .ACRTextContainer,
+  .XSCRTextContainer {
+    left: 7%;
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .SmallPiece {
+    width: 50%;
+    // height: 250px;
+    height: auto;
+    padding: 0px;
+    margin-top: 0px;
+    a {
+      font-size: 12px;
+    }
+    b {
+      font-size: 12px;
+    }
+  }
+  .LargePiece {
+    width: 100%;
+    // height: 250px;
+    height: auto;
+    padding: 0px;
+    margin-top: 30px;
+    margin-top: 0px;
+    a {
+      font-size: 12px;
+    }
+    b {
+      font-size: 12px;
+    }
+  }
+
+  .PieceTextContainer {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .PPI2TextContainer {
+    p {
+      font-size: 11px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .PPI2TextContainer {
+    p {
+      font-size: 10px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .PPI2TextContainer {
+    p {
+      font-size: 9px !important;
+    }
+  }
 }
 
 .scale-in-center {

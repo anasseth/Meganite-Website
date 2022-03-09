@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { GlobalService } from '../service/global.service';
 import { ProductImageBundle, ProductImageBundle2, ProductImageBundle3, ProductImageBundle4 } from './productData';
 import { faAngleDown, faAngleUp, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faCartPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product-showcase',
@@ -13,9 +15,12 @@ export class ProductShowcaseComponent implements OnInit {
 
   constructor(public _global: GlobalService, public router: Router) { }
 
-  Check = faCheckCircle
-  Drop = faAngleDown
-  Up = faAngleUp
+  Check = faCheckCircle;
+  Drop = faAngleDown;
+  Up = faAngleUp;
+  faAngleRight = faAngleRight;
+  faCart = faCartPlus;
+  Cancel = faTimes;
   activeProduct: string = "";
   showProduct: boolean = false;
   ProductImageBundle = ProductImageBundle;
@@ -51,6 +56,16 @@ export class ProductShowcaseComponent implements OnInit {
     else {
       this.selectedFilter = name;
       this.showFilter = true
+    }
+  }
+
+  checkIfFilterSelected(name: string) {
+    var check = this.appliedFilter.filter((x: any) => x == name).length;
+    if (check == 0) {
+      return false;
+    }
+    else {
+      return true;
     }
   }
 
@@ -92,7 +107,6 @@ export class ProductShowcaseComponent implements OnInit {
   }
 
   checkProductInCart(product: any) {
-    // console.log
     return this._global.addedToCart.filter((x: any) => x.imgSrc == product.imgSrc).length
   }
 

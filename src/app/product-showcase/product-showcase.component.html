@@ -2,7 +2,7 @@
   <div class="ProductMainPath">Home / Prodcut / Solid Surface</div>
   <div class="ProductFilter">
     <div class="FilterDropdown FD-1" (click)="selectFilter('Collection')">
-      Filter By Collections
+      <span class="Desktop">Filter</span> By Collections
       <fa-icon
         [icon]="Drop"
         *ngIf="selectedFilter != 'Collection'"
@@ -15,7 +15,7 @@
       ></fa-icon>
     </div>
     <div class="FilterDropdown FD-2" (click)="selectFilter('Color')">
-      Filter By Color Hue
+      <span class="Desktop">Filter</span> By Color Hue
       <fa-icon
         [icon]="Drop"
         *ngIf="selectedFilter != 'Color'"
@@ -28,7 +28,7 @@
       ></fa-icon>
     </div>
     <div class="FilterDropdown FD-3" (click)="selectFilter('Size')">
-      Filter By Size
+      <span class="Desktop">Filter</span> By Size
       <fa-icon
         [icon]="Drop"
         *ngIf="selectedFilter != 'Size'"
@@ -41,17 +41,36 @@
       ></fa-icon>
     </div>
   </div>
-  <div class="ProductFilterOption" *ngIf="showFilter">
+
+  <div class="Desktop">
     <div
-      class="Options"
-      *ngFor="let opt of filterOptionsData()"
-      (click)="addSelectedFilter(opt)"
+      [ngClass]="
+        selectedFilter == 'Collection'
+          ? 'ProductFilterOption PFOBackground1'
+          : selectedFilter == 'Color'
+          ? 'ProductFilterOption PFOBackground2'
+          : 'ProductFilterOption PFOBackground3'
+      "
+      *ngIf="showFilter"
     >
-      {{ opt }}
-      <b style="float: right">x</b>
+      <div
+        [ngClass]="
+          checkIfFilterSelected(opt) == true ? 'Options OptionBack' : 'Options'
+        "
+        *ngFor="let opt of filterOptionsData()"
+        (click)="addSelectedFilter(opt)"
+      >
+        {{ opt }}
+        <b
+          style="float: right; color: #e0e0e0"
+          *ngIf="checkIfFilterSelected(opt) == true"
+          >x</b
+        >
+      </div>
     </div>
   </div>
-  <div class="ProductFilterOption2" *ngIf="appliedFilter.length > 0">
+
+  <div class="ProductFilterOption2 Desktop" *ngIf="appliedFilter.length > 0">
     <div
       class="Options2"
       *ngFor="let opt of appliedFilter"
@@ -59,6 +78,37 @@
     >
       {{ opt }}
       <b style="float: right">x</b>
+    </div>
+  </div>
+
+  <div
+    class="dropdownDetailedOptions dropdownDetailedOptionsMobile Mobile"
+    *ngIf="showFilter"
+  >
+    <a
+      *ngFor="let opt of filterOptionsData()"
+      [ngClass]="
+        checkIfFilterSelected(opt) == true
+          ? 'activeFilter'
+          : this.selectedFilter == 'Color'
+          ? 'bunchTwo'
+          : this.selectedFilter == 'Size'
+          ? 'bunchThree'
+          : ''
+      "
+      (click)="addSelectedFilter(opt)"
+    >
+      {{ opt }}
+      <fa-icon
+        [icon]="Cancel"
+        *ngIf="checkIfFilterSelected(opt) == true"
+        style="font-size: 15px; color: grey; float: right"
+      >
+      </fa-icon>
+    </a>
+    <div class="buttonContainer">
+      <button class="Done">Done</button>
+      <button class="Clear">Clear</button>
     </div>
   </div>
 
@@ -110,7 +160,7 @@
       (mouseenter)="clickProduct(product.imgSrc)"
     >
       <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
-      <div *ngIf="activeProduct != product.imgSrc">
+      <div *ngIf="activeProduct != product.imgSrc" class="PieceTextContainer">
         <br />
         <b>{{ product.materialName }}</b>
         <a>{{ product.code }}</a>
@@ -180,7 +230,7 @@
       (mouseenter)="clickProduct(product.imgSrc)"
     >
       <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
-      <div *ngIf="activeProduct != product.imgSrc">
+      <div *ngIf="activeProduct != product.imgSrc" class="PieceTextContainer">
         <br />
         <b>{{ product.materialName }}</b>
         <a>{{ product.code }}</a>
@@ -250,7 +300,7 @@
       (mouseenter)="clickProduct(product.imgSrc)"
     >
       <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
-      <div *ngIf="activeProduct != product.imgSrc">
+      <div *ngIf="activeProduct != product.imgSrc" class="PieceTextContainer">
         <br />
         <b>{{ product.materialName }}</b>
         <a>{{ product.code }}</a>
@@ -320,7 +370,7 @@
       (mouseenter)="clickProduct(product.imgSrc)"
     >
       <img [src]="product.imgSrc" *ngIf="activeProduct != product.imgSrc" />
-      <div *ngIf="activeProduct != product.imgSrc">
+      <div *ngIf="activeProduct != product.imgSrc" class="PieceTextContainer">
         <br />
         <b>{{ product.materialName }}</b>
         <a>{{ product.code }}</a>

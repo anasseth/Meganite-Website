@@ -3,8 +3,11 @@
   // height: 11%;
   // min-height: 65px;
 
-  height: 65px;
-  min-height: 11%;
+  // height: 65px;
+  // min-height: 11%;
+
+  max-height: 65px;
+  height: 11%;
 
   position: fixed;
   border-bottom: 2px solid transparent;
@@ -242,9 +245,21 @@ a:hover {
     top: 0px !important;
   }
   .HeaderMainContainer {
-    height: 90px;
     justify-content: space-between;
+    min-height: 65px !important;
+    height: 11%;
+
+    // commentng ths one for test
+    // max-height: 90px;
   }
+
+  // Commented On 9 Mar 2022. After Product / Product Detail
+  //
+  // .HeaderMainContainer {
+  //   height: 90px;
+  //   justify-content: space-between;
+  // }
+
   .LinkContainerOne {
     width: 10%;
     //   border: 1px solid grey;

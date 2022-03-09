@@ -60,11 +60,9 @@
 }
 .LeftImage {
   width: 50%;
-  border: 1px solid #f8f8f8;
 }
 .RightImage {
   width: 50%;
-  border: 1px solid #f8f8f8;
 }
 .TextContainer {
   margin: auto;
@@ -85,6 +83,7 @@
     font-size: 14px;
     position: relative;
     transition-duration: 0.3s;
+    cursor: pointer;
   }
   a:hover {
     color: #ff1d31;
