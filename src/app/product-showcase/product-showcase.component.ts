@@ -2,9 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { GlobalService } from '../service/global.service';
 import { ProductImageBundle, ProductImageBundle2, ProductImageBundle3, ProductImageBundle4 } from './productData';
-import { faAngleDown, faAngleUp, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { faCartPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMapMarkerAlt,
+  faEnvelope,
+  faCartPlus,
+  faTimes,
+  faAngleRight,
+  faAngleDown,
+  faAngleUp,
+  faCheckCircle
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product-showcase',
@@ -15,6 +22,9 @@ export class ProductShowcaseComponent implements OnInit {
 
   constructor(public _global: GlobalService, public router: Router) { }
 
+  faEnvelop = faEnvelope;
+  faMapMarker = faMapMarkerAlt;
+  faCartPlus = faCartPlus;
   Check = faCheckCircle;
   Drop = faAngleDown;
   Up = faAngleUp;
@@ -70,9 +80,11 @@ export class ProductShowcaseComponent implements OnInit {
   }
 
   addSelectedFilter(name: string) {
-    var checkIfAlreadyExist = this.appliedFilter.filter((x: any) => x == name).length;
-    if (checkIfAlreadyExist == 0) {
+    if (this.checkIfFilterSelected(name) == false) {
       this.appliedFilter.push(name)
+    }
+    else {
+      this.removeAddedFilter(name)
     }
   }
 
@@ -108,6 +120,14 @@ export class ProductShowcaseComponent implements OnInit {
 
   checkProductInCart(product: any) {
     return this._global.addedToCart.filter((x: any) => x.imgSrc == product.imgSrc).length
+  }
+
+  applyFilter() {
+    this.showFilter = false;
+  }
+
+  clearFilter() {
+    this.appliedFilter = [];
   }
 
 }

@@ -4,6 +4,75 @@
   position: absolute;
   height: max-content;
 }
+.HomeLinkContainer {
+  background-color: #f0f0f0;
+  position: fixed;
+  left: 0;
+  bottom: 40vh;
+  width: 50px;
+  height: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  z-index: 10;
+}
+.mainIcon {
+  color: inherit;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  transition-duration: 0.2s;
+  vertical-align: middle;
+}
+.SampleQuantity {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #777777;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+}
+.mainIcon:hover {
+  background-color: #ff1d31;
+  transition-duration: 0.2s;
+  color: inherit;
+}
+.mainIconContainer {
+  background-color: transparent;
+  width: max-content;
+  transition-duration: 0.3s;
+  color: #ff1d31;
+  p {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: transparent;
+    font-size: 14px;
+    // font-family: "Didact Gothic";
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.mainIconContainer:hover {
+  color: white;
+  background-color: #ff1d31;
+  transition-duration: 0.3s;
+  p {
+    color: white;
+  }
+}
+
+.FilterFixedContainer {
+  position: fixed;
+  top: 65px;
+  z-index: 2;
+  width: 100%;
+}
 .ProductMainPath {
   width: 100%;
   background-color: #f8f8f8;

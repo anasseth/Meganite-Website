@@ -5,6 +5,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { ThrowStmt } from '@angular/compiler';
+import { Router } from '@angular/router';
 // import { faSquareX } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -107,7 +108,7 @@ export class HeaderComponent implements OnInit {
       ]
     }
   ]
-  constructor(public global: GlobalService) { }
+  constructor(public router: Router, public global: GlobalService) { }
 
   ngOnInit(): void {
   }
@@ -145,6 +146,11 @@ export class HeaderComponent implements OnInit {
     else {
       this.activatedLink = '';
     }
+  }
+
+  navigateFromHeaderTo(url: string) {
+    this.router.navigate([url])
+    this.activatedLink = "";
   }
 
 }

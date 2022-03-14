@@ -1,114 +1,151 @@
 <div class="ProductMainPage">
-  <div class="ProductMainPath">Home / Prodcut / Solid Surface</div>
-  <div class="ProductFilter">
-    <div class="FilterDropdown FD-1" (click)="selectFilter('Collection')">
-      <span class="Desktop">Filter</span> By Collections
-      <fa-icon
-        [icon]="Drop"
-        *ngIf="selectedFilter != 'Collection'"
-        class="DropIcon"
-      ></fa-icon>
-      <fa-icon
-        [icon]="Up"
-        *ngIf="showFilter && selectedFilter == 'Collection'"
-        class="DropIcon"
-      ></fa-icon>
+  <div class="HomeLinkContainer hide">
+    <div class="mainIconContainer">
+      <button class="mainIcon">
+        <fa-icon [icon]="faMapMarker"></fa-icon>
+      </button>
+      <p>Location</p>
     </div>
-    <div class="FilterDropdown FD-2" (click)="selectFilter('Color')">
-      <span class="Desktop">Filter</span> By Color Hue
-      <fa-icon
-        [icon]="Drop"
-        *ngIf="selectedFilter != 'Color'"
-        class="DropIcon"
-      ></fa-icon>
-      <fa-icon
-        [icon]="Up"
-        *ngIf="showFilter && selectedFilter == 'Color'"
-        class="DropIcon"
-      ></fa-icon>
+
+    <div class="mainIconContainer">
+      <button class="mainIcon" style="position: relative">
+        <span
+          class="SampleQuantity"
+          *ngIf="this._global.addedToCart.length > 0"
+        >
+          {{
+            this._global.addedToCart.length < 10
+              ? this._global.addedToCart.length
+              : "9+"
+          }}
+        </span>
+        <fa-icon [icon]="faCartPlus"></fa-icon>
+      </button>
+      <p>Request Sample</p>
     </div>
-    <div class="FilterDropdown FD-3" (click)="selectFilter('Size')">
-      <span class="Desktop">Filter</span> By Size
-      <fa-icon
-        [icon]="Drop"
-        *ngIf="selectedFilter != 'Size'"
-        class="DropIcon"
-      ></fa-icon>
-      <fa-icon
-        [icon]="Up"
-        *ngIf="showFilter && selectedFilter == 'Size'"
-        class="DropIcon"
-      ></fa-icon>
+
+    <div class="mainIconContainer">
+      <button class="mainIcon">
+        <fa-icon [icon]="faEnvelop"></fa-icon>
+      </button>
+      <p>Message Us</p>
     </div>
   </div>
 
-  <div class="Desktop">
-    <div
-      [ngClass]="
-        selectedFilter == 'Collection'
-          ? 'ProductFilterOption PFOBackground1'
-          : selectedFilter == 'Color'
-          ? 'ProductFilterOption PFOBackground2'
-          : 'ProductFilterOption PFOBackground3'
-      "
-      *ngIf="showFilter"
-    >
+  <div class="FilterFixedContainer">
+    <div class="ProductMainPath">Home / Prodcut / Solid Surface</div>
+    <div class="ProductFilter">
+      <div class="FilterDropdown FD-1" (click)="selectFilter('Collection')">
+        <span class="Desktop">Filter</span> By Collections
+        <fa-icon
+          [icon]="Drop"
+          *ngIf="selectedFilter != 'Collection'"
+          class="DropIcon"
+        ></fa-icon>
+        <fa-icon
+          [icon]="Up"
+          *ngIf="showFilter && selectedFilter == 'Collection'"
+          class="DropIcon"
+        ></fa-icon>
+      </div>
+      <div class="FilterDropdown FD-2" (click)="selectFilter('Color')">
+        <span class="Desktop">Filter</span> By Color Hue
+        <fa-icon
+          [icon]="Drop"
+          *ngIf="selectedFilter != 'Color'"
+          class="DropIcon"
+        ></fa-icon>
+        <fa-icon
+          [icon]="Up"
+          *ngIf="showFilter && selectedFilter == 'Color'"
+          class="DropIcon"
+        ></fa-icon>
+      </div>
+      <div class="FilterDropdown FD-3" (click)="selectFilter('Size')">
+        <span class="Desktop">Filter</span> By Size
+        <fa-icon
+          [icon]="Drop"
+          *ngIf="selectedFilter != 'Size'"
+          class="DropIcon"
+        ></fa-icon>
+        <fa-icon
+          [icon]="Up"
+          *ngIf="showFilter && selectedFilter == 'Size'"
+          class="DropIcon"
+        ></fa-icon>
+      </div>
+    </div>
+
+    <div class="Desktop">
       <div
         [ngClass]="
-          checkIfFilterSelected(opt) == true ? 'Options OptionBack' : 'Options'
+          selectedFilter == 'Collection'
+            ? 'ProductFilterOption PFOBackground1'
+            : selectedFilter == 'Color'
+            ? 'ProductFilterOption PFOBackground2'
+            : 'ProductFilterOption PFOBackground3'
         "
+        *ngIf="showFilter"
+      >
+        <div
+          [ngClass]="
+            checkIfFilterSelected(opt) == true
+              ? 'Options OptionBack'
+              : 'Options'
+          "
+          *ngFor="let opt of filterOptionsData()"
+          (click)="addSelectedFilter(opt)"
+        >
+          {{ opt }}
+          <b
+            style="float: right; color: #e0e0e0"
+            *ngIf="checkIfFilterSelected(opt) == true"
+            >x</b
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="ProductFilterOption2 Desktop" *ngIf="appliedFilter.length > 0">
+      <div
+        class="Options2"
+        *ngFor="let opt of appliedFilter"
+        (click)="removeAddedFilter(opt)"
+      >
+        {{ opt }}
+        <b style="float: right">x</b>
+      </div>
+    </div>
+
+    <div
+      class="dropdownDetailedOptions dropdownDetailedOptionsMobile Mobile"
+      *ngIf="showFilter"
+    >
+      <a
         *ngFor="let opt of filterOptionsData()"
+        [ngClass]="
+          checkIfFilterSelected(opt) == true
+            ? 'activeFilter'
+            : this.selectedFilter == 'Color'
+            ? 'bunchTwo'
+            : this.selectedFilter == 'Size'
+            ? 'bunchThree'
+            : ''
+        "
         (click)="addSelectedFilter(opt)"
       >
         {{ opt }}
-        <b
-          style="float: right; color: #e0e0e0"
+        <fa-icon
+          [icon]="Cancel"
           *ngIf="checkIfFilterSelected(opt) == true"
-          >x</b
+          style="font-size: 15px; color: grey; float: right"
         >
+        </fa-icon>
+      </a>
+      <div class="buttonContainer">
+        <button class="Done" (click)="this.applyFilter()">Done</button>
+        <button class="Clear" (click)="this.clearFilter()">Clear</button>
       </div>
-    </div>
-  </div>
-
-  <div class="ProductFilterOption2 Desktop" *ngIf="appliedFilter.length > 0">
-    <div
-      class="Options2"
-      *ngFor="let opt of appliedFilter"
-      (click)="removeAddedFilter(opt)"
-    >
-      {{ opt }}
-      <b style="float: right">x</b>
-    </div>
-  </div>
-
-  <div
-    class="dropdownDetailedOptions dropdownDetailedOptionsMobile Mobile"
-    *ngIf="showFilter"
-  >
-    <a
-      *ngFor="let opt of filterOptionsData()"
-      [ngClass]="
-        checkIfFilterSelected(opt) == true
-          ? 'activeFilter'
-          : this.selectedFilter == 'Color'
-          ? 'bunchTwo'
-          : this.selectedFilter == 'Size'
-          ? 'bunchThree'
-          : ''
-      "
-      (click)="addSelectedFilter(opt)"
-    >
-      {{ opt }}
-      <fa-icon
-        [icon]="Cancel"
-        *ngIf="checkIfFilterSelected(opt) == true"
-        style="font-size: 15px; color: grey; float: right"
-      >
-      </fa-icon>
-    </a>
-    <div class="buttonContainer">
-      <button class="Done">Done</button>
-      <button class="Clear">Clear</button>
     </div>
   </div>
 
@@ -185,7 +222,7 @@
             max-width: 100% !important;
             width: 100% !important;
           "
-          (mouseout)="hideProduct()"
+          (click)="hideProduct()"
         />
         <div class="productContainer slide-in-bottom">
           <button
