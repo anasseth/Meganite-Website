@@ -35,7 +35,7 @@ export var ProductImageBundle = [
         largeImgSrc: "../../assets/product-1-3d-large.png"
     },
     {
-        imgSrc: "../../assets/Product/ProductImage/Image-6.png",
+        imgSrc: "../../assets/Product/ProductImage/Image-21.png",
         className: "SmallPiece",
         materialName: "TAUPE CONCRETE",
         code: "M022",
@@ -126,7 +126,7 @@ export var ProductImageBundle = [
         largeImgSrc: "../../assets/product-1-3d-large.png"
     },
     {
-        imgSrc: "../../assets/Product/ProductImage/Image-18.png",
+        imgSrc: "../../assets/Product/ProductImage/Image-21.png",
         className: "SmallPiece",
         materialName: "TAUPE CONCRETE",
         code: "M022",
@@ -324,7 +324,7 @@ export var ProductImageBundle4 = [
         largeImgSrc: "../../assets/product-1-3d.png"
     },
     {
-        imgSrc: "../../assets/Product/ProductImage/Image-6.png",
+        imgSrc: "../../assets/Product/ProductImage/Image-21.png",
         className: "SmallPiece",
         materialName: "TAUPE CONCRETE",
         code: "M022",
@@ -397,7 +397,7 @@ export var ProductImageBundle4 = [
         largeImgSrc: "../../assets/product-1-3d.png"
     },
     {
-        imgSrc: "../../assets/Product/ProductImage/Image-18.png",
+        imgSrc: "../../assets/Product/ProductImage/Image-6.png",
         className: "SmallPiece",
         materialName: "TAUPE CONCRETE",
         code: "M022",
