@@ -13,6 +13,13 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { FranchiseComponent } from './franchise/franchise.component';
+import { HealthcareComponent } from './healthcare/healthcare.component';
+import { InspirationCommercialComponent } from './inspiration-commercial/inspiration-commercial.component';
+import { InspirationEducationComponent } from './inspiration-education/inspiration-education.component';
+import { AboutMeganiteComponent } from './about-meganite/about-meganite.component';
+import { WhereToBuyComponent } from './where-to-buy/where-to-buy.component';
+import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +29,14 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     HeaderComponent,
     FooterComponent,
     ProductShowcaseComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    FranchiseComponent,
+    HealthcareComponent,
+    InspirationCommercialComponent,
+    InspirationEducationComponent,
+    AboutMeganiteComponent,
+    WhereToBuyComponent,
+    AntimicrobialComponent
   ],
   imports: [
     BrowserModule,
