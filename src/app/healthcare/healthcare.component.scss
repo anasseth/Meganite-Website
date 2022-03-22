@@ -168,7 +168,7 @@ h2.HeadingUpdatedStyle2 {
   width: 100%;
   min-height: 1000px;
   height: auto;
-  background-color: #dbdbdb;
+  background-color: #F8F8F8;
   padding-top: 120px;
   padding-bottom: 120px;
   padding-top: 50px;
@@ -186,7 +186,7 @@ h2.HeadingUpdatedStyle2 {
 }
 .ButtonContainer {
   height: 150px;
-  background-color: #f5f5f5;
+  background-color: rgba(135, 189, 216, 0.08);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -262,6 +262,65 @@ h2.HeadingUpdatedStyle2 {
     margin: 20px;
     background-color: white;
     color: #707070;
+  }
+}
+
+.OuterListContainer {
+  padding-top: 85px;
+  padding-bottom: 100px;
+  width: 100%;
+  background-color: white;
+  height: fit-content;
+}
+.OLCData {
+  height: auto;
+  text-align: center;
+  background-color: white;
+  h1 {
+    font-size: 36px !important;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #92a8d1;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.ListContainer1 {
+  min-height: 150px;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 95px;
+}
+.List1 {
+  min-width: 15%;
+  width: auto;
+  text-align: left;
+  ul {
+    list-style: none;
+  }
+
+  ul li::before {
+    content: "\2022";
+    color: #92a8d1;
+    font-weight: bold;
+    display: inline-block;
+    width: 0.7em;
+    // margin-left: -1em;
+  }
+  li {
+    color: #707070;
+    font-size: 25px;
+    font-weight: 450;
+    font-family: "Roboto", sans-serif;
+    margin: 10px;
+    // line-height: 49px;
+    letter-spacing: 0em;
   }
 }
 
@@ -408,6 +467,137 @@ h2.HeadingUpdatedStyle2 {
 .RightImage {
   padding: 30px;
   width: 50%;
+}
+
+.BacteriaStandardContainer {
+  height: auto;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.BSCLeft {
+  width: 46%;
+  height: 550px;
+  // border: 0.5px solid black;
+  position: relative;
+  padding-right: 50px;
+  text-align: left;
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #707070;
+  }
+  p {
+    color: #707070;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.LearnMoreContainer {
+  width: 100%;
+  height: 20%;
+  margin-top: 30px;
+  b {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #707070;
+  }
+}
+
+.StandardsImageContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+}
+
+.BSCRight {
+  width: 46%;
+  height: 550px;
+  position: relative;
+  // border: 0.5px solid black;
+  border-left: 8px solid #ff1d31;
+  padding-left: 40px;
+  h1 {
+    color: #ff1d31;
+    margin-top: 0px;
+    font-size: 68px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff1d31;
+  }
+}
+
+.BacteriaList {
+  margin-top: 40px;
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #707070;
+    text-decoration: underline;
+    margin: 0px;
+  }
+}
+
+.DisclaimerContainer {
+  position: absolute;
+  bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #707070;
 }
 
 @media screen and (max-width: 1000px) {
