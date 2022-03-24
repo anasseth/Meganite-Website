@@ -115,7 +115,7 @@ export class ProductShowcaseComponent implements OnInit {
 
   checkProductDetail(obj: any) {
     this._global.activeImagePath = obj.imgSrc;
-    this.router.navigate(["/product-detail"])
+    this.router.navigate(["/product/detail"])
   }
 
   checkProductInCart(product: any) {

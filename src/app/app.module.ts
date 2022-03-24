@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgwWowModule } from 'ngx-wow';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,6 +20,7 @@ import { InspirationEducationComponent } from './inspiration-education/inspirati
 import { AboutMeganiteComponent } from './about-meganite/about-meganite.component';
 import { WhereToBuyComponent } from './where-to-buy/where-to-buy.component';
 import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component'
     CarouselModule,
     FontAwesomeModule,
     NgwWowModule,
+    MatIconModule,
     AnimateOnScrollModule.forRoot()
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
