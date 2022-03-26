@@ -41,7 +41,7 @@ const routes: Routes = [
   {
     path: 'inspiration/commercial',
     component: InspirationCommercialComponent
-  }
+  },
 ];
 
 @NgModule({
