@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMeganiteComponent } from './about-meganite/about-meganite.component';
+import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component';
 import { FranchiseComponent } from './franchise/franchise.component';
 import { HealthcareComponent } from './healthcare/healthcare.component';
 import { HomeComponent } from './home/home.component';
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'about',
     component: AboutMeganiteComponent
+  },
+  {
+    path: 'antimicrobial',
+    component: AntimicrobialComponent
   },
 ];
 

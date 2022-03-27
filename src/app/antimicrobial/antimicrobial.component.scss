@@ -1,0 +1,632 @@
+.AntimicrobialPage {
+  margin-top: 65px;
+  width: 100%;
+  position: absolute;
+  height: max-content;
+}
+.AntimicrobialMainPath {
+  width: 100%;
+  background-color: #f8f8f8;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.AntimicrobialPageImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+}
+.PPITextContainer {
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  padding-left: 7%;
+  bottom: 40%;
+  color: white;
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  h6 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.AntimicrobialPageContainerOne {
+  background-color: white;
+  padding: 80px;
+  width: 100%;
+  margin: auto;
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+    color: #707070;
+  }
+}
+.AMIContainer {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  img {
+    width: 90%;
+    margin: auto;
+  }
+}
+.AMC2 {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+}
+.AMC3 {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+.AMC4 {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.AMC4ChildContainer {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 100%;
+  }
+  div.AMC4CCRight {
+    width: auto;
+    padding-left: 90px;
+    p.P1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    p.P2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 37px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #707070;
+    }
+  }
+}
+
+.AMC5 {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  p {
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #707070;
+  }
+  div {
+    margin-top: 70px;
+    b {
+      margin: 10px;
+      margin-top: 60px;
+      font-family: "Roboto", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 37px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #707070;
+    }
+  }
+}
+.AMC6 {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  img {
+    width: 40%;
+  }
+}
+
+.TextLogoContainer {
+  width: 100%;
+  background-color: white;
+  height: auto;
+  padding-top: 35px;
+}
+.ButtonContainer {
+  height: 150px;
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  button {
+    border: 1px solid #c0c0c0;
+    width: 20%;
+    height: 37px;
+    margin: 20px;
+    background-color: transparent;
+    color: #707070;
+  }
+}
+.LogoContainer {
+  height: 450px;
+  background-color: white;
+  width: 100%;
+  //   border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.TextLogoContainer2 {
+  width: 100%;
+  background-color: white;
+  height: fit-content;
+  padding-top: 35px;
+  text-align: center;
+  padding-bottom: 80px;
+  h1 {
+    font-size: 36px !important;
+    font-family: "Lora", serif;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 36px !important;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #707070;
+    font-size: 24px !important;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  p {
+    color: #707070;
+    font-size: 22px;
+    font-weight: 400;
+    width: 55%;
+    margin: auto;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.ButtonContainer2 {
+  height: 150px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  button {
+    border: 1px solid #e0e0e0;
+    width: 20%;
+    height: 37px;
+    margin: 20px;
+    background-color: white;
+    color: #707070;
+  }
+}
+
+.AMC7 {
+  //   background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.AMC7ChildContainer {
+  height: 450px;
+  width: 50%;
+}
+.AMC7CCOne {
+  background-color: #aaa7a3;
+  position: relative;
+  div.AMC7CC1Text {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    h1 {
+      font-family: "Lora", serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+    }
+  }
+  div.AMC7CC1Text2 {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+.AMC7CCTwo {
+  background-color: transparent;
+}
+.AMC7CCThree {
+  background-color: white;
+  text-align: center;
+  position: relative;
+  img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.AMC7CCFour {
+  background-color: #888888;
+  position: relative;
+  div.AMC7CC4Text {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    h1 {
+      font-family: "Lora", serif;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+    }
+    p.Text2 {
+      margin-top: 35px;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  div.AMC7CC4Text2 {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.BacteriaStandardContainer {
+  height: auto;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.BSCLeft {
+  width: 46%;
+  height: 550px;
+  // border: 0.5px solid black;
+  position: relative;
+  padding-right: 50px;
+  text-align: left;
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 85px;
+  }
+  p {
+    color: #707070;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.LearnMoreContainer {
+  width: 100%;
+  height: 20%;
+  margin-top: 30px;
+  b {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #707070;
+  }
+}
+
+.StandardsImageContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+}
+
+.BSCRight {
+  width: 46%;
+  height: 550px;
+  position: relative;
+  // border: 0.5px solid black;
+  border-left: 8px solid #ff1d31;
+  padding-left: 40px;
+  h1 {
+    color: #ff1d31;
+    margin-top: 0px;
+    font-size: 68px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ff1d31;
+  }
+}
+
+.BacteriaList {
+  margin-top: 40px;
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #707070;
+    text-decoration: underline;
+    margin: 0px;
+  }
+}
+
+.DisclaimerContainer {
+  position: absolute;
+  bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #707070;
+}
+
+.PastProjectContainer {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.PPCLeft {
+  width: 50%;
+  height: 100%;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.PPCLeftLogo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PPCLeftText {
+  //   width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    color: #707070;
+    font-family: "Roboto", sans-serif;
+    // margin-bottom: 0px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #707070;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    // margin-bottom: 0px;
+  }
+  b {
+    color: #707070;
+  }
+}
+.PPCRight {
+  width: 50%;
+  height: 100%;
+  background-color: #f8f8f8;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PPCRightText {
+  //   width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    color: #707070;
+    font-family: "Roboto", sans-serif;
+    // margin-bottom: 0px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #707070;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    // margin-bottom: 0px;
+  }
+  b {
+    color: #707070;
+  }
+}
+
+.SolidImageOne {
+  width: 100%;
+  height: auto;
+}
