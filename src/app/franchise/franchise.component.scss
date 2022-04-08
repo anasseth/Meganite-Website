@@ -111,12 +111,9 @@
 
 .GalleryPortion {
   width: 100%;
-  min-height: 1000px;
-  height: auto;
+  height: fit-content;
   background-color: #dbdbdb;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  padding-top: 50px;
+  padding-top: 75%;
   position: relative;
   img {
     position: absolute;
@@ -208,6 +205,12 @@
     background-color: white;
     color: #707070;
   }
+  button:hover {
+    border: 1px solid #ff1d31;
+    background-color: #ff1d31;
+    color: white;
+    transition-duration: 0.3s;
+  }
 }
 
 .NotableClientContainer {
@@ -236,7 +239,7 @@
   width: 100%;
   //   border: 1px solid grey;
   margin: auto;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   //   align-items: center;
   padding: 20px;
@@ -268,7 +271,7 @@
 
 .PastProjectContainer {
   width: 100%;
-  height: 150px;
+  height: 250px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -284,17 +287,17 @@
   align-items: center;
 }
 .PPCLeftLogo {
-  width: 7%;
+  width: 20%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .PPCLeftText {
-  width: 40%;
+  width: 75%;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   display: flex;
   flex-wrap: wrap;
   h1 {
@@ -303,7 +306,7 @@
     width: 100%;
     color: #707070;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 0px;
+    // margin-bottom: 0px;
   }
   p {
     font-size: 18px;
@@ -311,8 +314,10 @@
     color: #707070;
     width: 100%;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 0px;
-    text-decoration: underline;
+    // margin-bottom: 0px;
+  }
+  b {
+    color: #707070;
   }
 }
 .PPCRight {
@@ -355,22 +360,111 @@
   padding: 26px;
   width: 50%;
 }
+.alphabet {
+  margin-bottom: -28px;
+  font-weight: 500;
+  display: block;
+}
+.showDesktop {
+  display: block;
+  visibility: visible;
+}
+.showMobile {
+  display: none;
+  visibility: hidden;
+}
 
-@media screen and (max-width: 1000px) {
-  .TextContainer {
-    width: 76%;
+.LogoStyling {
+  width: auto;
+  margin: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .PPITextContainer {
+    h1 {
+      font-size: 42px;
+    }
   }
 }
 
-@media screen and (max-width: 820px) {
-  .ProductPageImage2 {
-    flex-wrap: wrap;
+@media screen and (max-width: 1000px) {
+  .PastProjectContainer {
+    height: fit-content;
+  }
+  .PPCLeft {
+    width: 100%;
+    height: 200px;
+  }
+  .PPCRight {
+    width: 100%;
+    height: 200px;
+  }
+  .TextContainer {
+    width: 76%;
+  }
+  .HeadingTwo {
+    p {
+      color: #888888;
+      font-size: 24px;
+      font-weight: 400;
+      width: 80%;
+      margin: auto;
+      margin-top: 50px;
+    }
+  }
+  .PPITextContainer {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .showMobile {
+    display: block;
+    visibility: visible;
+  }
+  .showDesktop {
+    display: none !important;
+    visibility: hidden;
   }
   .LeftImage {
-    width: 100%;
+    padding: 15px;
   }
   .RightImage {
-    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .PPITextContainer {
+    bottom: 40%;
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .HeadingOne {
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 42px;
+    }
+  }
+  .HeadingTwo {
+    width: 75%;
+    h1 {
+      width: 90%;
+      margin: auto;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
   }
   .MainTextContainer {
     padding-bottom: 100px !important;
@@ -384,5 +478,198 @@
     position: relative;
     top: 0;
     transform: translate(10px, 10px);
+  }
+  .ButtonContainer {
+    button {
+      border: 1px solid #c0c0c0;
+      width: 40%;
+      height: 37px;
+      margin: 20px;
+      background-color: transparent;
+      color: #707070;
+    }
+    button:hover {
+      border: 1px solid #ff1d31;
+      background-color: #ff1d31;
+      color: white;
+      transition-duration: 0.3s;
+    }
+  }
+  .LogoContainer {
+    height: auto;
+  }
+  .TextLogoContainer2 {
+    P {
+      width: 85%;
+    }
+  }
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+  .LogoStyling {
+    margin: 7%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .PPITextContainer {
+    h1 {
+      font-size: 28px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 54px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  .hide {
+    display: none;
+    visibility: hidden;
+  }
+  .ProductPageImage2 {
+    flex-wrap: wrap;
+  }
+  .LeftImage {
+    width: 100%;
+  }
+  .RightImage {
+    width: 100%;
+  }
+  .List {
+    li {
+      color: #707070;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 49px;
+      margin: 10px;
+    }
+  }
+  .NotableClientContainer {
+    height: 500px;
+  }
+  .TextLogoContainer2 {
+    h1 {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .LogoStyling {
+    margin: 7%;
+    width: 25%;
+  }
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .HeadingOne {
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 33px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  .HeadingTwo {
+    width: 90%;
+    h1 {
+      width: 90%;
+      margin: auto;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .TextLogoContainer {
+    padding: 0px;
+  }
+  .ButtonContainer {
+    margin-top: 0px;
+  }
+  .LeftImage {
+    padding: 0px;
+    padding-top: 0px;
+  }
+  .RightImage {
+    padding: 0px;
+    padding-top: 26px;
+  }
+  .PPCLeft {
+    width: 100%;
+    height: 150px;
+  }
+  .PPCRight {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ButtonContainer2 {
+    height: 200px;
+    button {
+      width: 60%;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .NotableClientContainer {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .PPCLeftText {
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .ButtonContainer {
+    button {
+      width: 50%;
+    }
+  }
+  .List {
+    li {
+      color: #707070;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 35px;
+      margin: 10px;
+    }
+  }
+  .TextLogoContainer2 {
+    h1 {
+      font-size: 30px !important;
+    }
+    h2 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+  }
+  .PPCLeftLogo {
+    display: none;
+    visibility: hidden;
+  }
+  .PPCLeftText {
+    width: 90%;
+  }
+  .PPCRightText {
+    width: 90%;
   }
 }

@@ -9,6 +9,11 @@ body::-webkit-scrollbar {
   width: 0.7em;
 }
 
+sup {
+  top: -0.2em;
+  left: 0.3rem;
+}
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
@@ -35,5 +40,11 @@ body::-webkit-scrollbar-thumb {
 //   font-size: 18px;
 // }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

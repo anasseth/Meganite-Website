@@ -4,6 +4,10 @@
   position: absolute;
   height: max-content;
 }
+sup {
+  top: -0.2em;
+  left: 0.3rem;
+}
 .AntimicrobialMainPath {
   width: 100%;
   background-color: #f8f8f8;
@@ -71,6 +75,21 @@
     width: fit-content;
     margin: auto;
     color: #707070;
+  }
+}
+.AMIContainer2 {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  img {
+    width: 50%;
+    margin: auto;
   }
 }
 .AMIContainer {
@@ -231,6 +250,10 @@
   justify-content: center;
   align-items: center;
 }
+.LogoStyling {
+  width: auto;
+  margin: 70px;
+}
 .TextLogoContainer2 {
   width: 100%;
   background-color: white;
@@ -282,6 +305,13 @@
     margin: 20px;
     background-color: white;
     color: #707070;
+    transition-duration: 0.3s;
+  }
+  button:hover {
+    border: 1px solid #ff1d31;
+    background-color: #ff1d31;
+    color: white;
+    transition-duration: 0.3s;
   }
 }
 
@@ -482,6 +512,9 @@
   justify-content: center;
   align-items: self-start;
 }
+.StandardLogo {
+  width: auto;
+}
 
 .BSCRight {
   width: 46%;
@@ -562,7 +595,7 @@
   align-items: center;
 }
 .PPCLeftText {
-  //   width: 40%;
+  width: 75%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -599,7 +632,7 @@
 }
 
 .PPCRightText {
-  //   width: 40%;
+  width: 75%;
   height: 100%;
   align-items: center;
   justify-content: center;
@@ -629,4 +662,577 @@
 .SolidImageOne {
   width: 100%;
   height: auto;
+}
+
+.showOnDesktop {
+  display: block;
+  visibility: visible;
+}
+
+.showOnMobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .PPITextContainer {
+    h1 {
+      font-size: 30px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 18px;
+    }
+  }
+  .BSCLeft {
+    h1 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+  .BSCRight {
+    h1 {
+      font-size: 55px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+  }
+  .BacteriaList {
+    h3 {
+      font-size: 18px;
+    }
+  }
+  .AMC4ChildContainer {
+    img {
+      width: 30%;
+    }
+    div.AMC4CCRight {
+      padding-left: 6%;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .PPITextContainer {
+    h1 {
+      font-size: 26px;
+    }
+    h5 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+  }
+  .AMC4ChildContainer {
+    img {
+      width: 30%;
+    }
+    div.AMC4CCRight {
+      padding-left: 6%;
+      p.P1 {
+        font-size: 25px;
+      }
+      p.P2 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .AntimicrobialPageContainerOne {
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .AMC7CCOne {
+    div.AMC7CC1Text {
+      h1 {
+        font-size: 31px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+    div.AMC7CC1Text2 {
+      p {
+        font-size: 19px;
+      }
+    }
+  }
+
+  .AMC7CCFour {
+    div.AMC7CC4Text {
+      h1 {
+        font-size: 29px;
+      }
+      p {
+        font-size: 17px;
+      }
+      p.Text2 {
+        font-size: 15px;
+      }
+    }
+    div.AMC7CC4Text2 {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .PastProjectContainer {
+    height: fit-content;
+  }
+  .PPCLeft {
+    width: 100%;
+    height: 250px;
+  }
+  .PPCRight {
+    width: 100%;
+    height: 250px;
+  }
+  .AMC7ChildContainer {
+    height: 400px;
+    width: 50%;
+  }
+  .AMC7CCOne {
+    div.AMC7CC1Text {
+      top: 40px;
+      left: 40px;
+      h1 {
+        font-size: 31px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+    div.AMC7CC1Text2 {
+      p {
+        font-size: 19px;
+      }
+    }
+  }
+  .AMC7CCFour {
+    div.AMC7CC4Text {
+      top: 40px;
+      left: 40px;
+      h1 {
+        font-size: 29px;
+      }
+      p {
+        font-size: 17px;
+      }
+      p.Text2 {
+        font-size: 15px;
+      }
+    }
+    div.AMC7CC4Text2 {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .StandardsImageContainer {
+    width: auto;
+  }
+  .StandardLogo {
+    width: 120px;
+  }
+  .PPITextContainer {
+    h1 {
+      font-size: 26px;
+    }
+    h5 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+  }
+  .AMC4ChildContainer {
+    img {
+      width: 30%;
+    }
+    div.AMC4CCRight {
+      padding-left: 6%;
+      p.P1 {
+        font-size: 25px;
+      }
+      p.P2 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .AntimicrobialPageContainerOne {
+    p {
+      font-size: 22px;
+    }
+  }
+
+  .AMC7CCOne {
+    div.AMC7CC1Text {
+      h1 {
+        font-size: 31px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+    div.AMC7CC1Text2 {
+      p {
+        font-size: 19px;
+      }
+    }
+  }
+
+  .AMC7CCFour {
+    div.AMC7CC4Text {
+      h1 {
+        font-size: 31px;
+      }
+      p {
+        font-size: 17px;
+      }
+      p.Text2 {
+        font-size: 15px;
+      }
+    }
+    div.AMC7CC4Text2 {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+  .PPITextContainer {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    padding-left: 5%;
+    bottom: 10%;
+    h1 {
+      font-family: "Lora", serif;
+      font-size: 36px;
+    }
+    h5 {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+    }
+    h6 {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+    }
+  }
+  .showOnMobile {
+    display: block;
+    visibility: visible;
+  }
+
+  .showOnDesktop {
+    display: none;
+    visibility: hidden;
+  }
+  .AntimicrobialPageContainerOne {
+    p {
+      font-size: 20px;
+    }
+  }
+  .AMIContainer2 {
+    padding-top: 0px;
+    img {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .BacteriaStandardContainer {
+    padding: 0px;
+    padding-top: 0px;
+  }
+
+  .BSCLeft {
+    width: 60%;
+    height: 480px;
+    padding-right: 0px;
+    h1 {
+      font-size: 34px;
+      margin-top: 60px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+  .BSCRight {
+    width: 75%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    h1 {
+      font-size: 68px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .AMC4ChildContainer {
+    height: auto;
+    img {
+      width: 40%;
+    }
+    div.AMC4CCRight {
+      width: 50%;
+    }
+  }
+  .AMC4 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .TextLogoContainer2 {
+    P {
+      width: 85%;
+    }
+  }
+
+  .AMC7CCFour {
+    div.AMC7CC4Text2 {
+      bottom: 20px;
+      left: 40px;
+    }
+  }
+  .AMC7CCOne {
+    div.AMC7CC1Text2 {
+      bottom: 20px;
+      left: 40px;
+    }
+  }
+  .AMC7CCFour {
+    div.AMC7CC4Text {
+      p.Text2 {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .AMC7CCTwo {
+    width: 35% !important;
+  }
+  .AMC7CCThree {
+    width: 35% !important;
+  }
+  .AMC7ChildContainer {
+    height: 300px;
+    width: 65%;
+  }
+
+  .LogoContainer {
+    height: auto;
+  }
+  .LogoStyling {
+    margin: 7%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .AMC7CCTwo {
+    display: none;
+    visibility: hidden;
+  }
+  .AMC7CCThree {
+    display: none;
+    visibility: hidden;
+  }
+  .AMC7ChildContainer {
+    height: 300px;
+    width: 100%;
+  }
+  .AMC5 {
+    div {
+      margin-top: 70px;
+      b {
+        margin: 10px;
+        margin-top: 0px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .PPITextContainer {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    padding-left: 5%;
+    bottom: 10%;
+    h1 {
+      font-family: "Lora", serif;
+      font-size: 30px;
+    }
+    h5 {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+    }
+    h6 {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+    }
+  }
+  .AMC7CCTwo {
+    display: none;
+    visibility: hidden;
+  }
+  .AMC7CCThree {
+    display: none;
+    visibility: hidden;
+  }
+  .AMC7ChildContainer {
+    height: 300px;
+    width: 100%;
+  }
+  .AMC5 {
+    div {
+      margin-top: 70px;
+      b {
+        margin: 10px;
+        margin-top: 0px;
+        display: inline-block;
+      }
+    }
+  }
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+  .LogoStyling {
+    margin: 7%;
+    width: 25%;
+  }
+  .TextLogoContainer2 {
+    h1 {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .AMC5 {
+    p {
+      width: 70%;
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+
+  .AMC4ChildContainer {
+    height: auto;
+    img {
+      width: 70%;
+    }
+    div.AMC4CCRight {
+      width: 80%;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .AntimicrobialPageContainerOne {
+    p {
+      font-size: 18px;
+    }
+  }
+  .BSCLeft {
+    width: 80%;
+    h1 {
+      font-size: 34px;
+      text-align: center;
+    }
+    p {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  .StandardsImageContainer {
+    left: 20%;
+    width: auto;
+  }
+  .BSCRight {
+    width: 90%;
+  }
+  .StandardLogo {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .AntimicrobialPageContainerOne {
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .AMC7CCOne {
+    div.AMC7CC1Text {
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    div.AMC7CC1Text2 {
+      p {
+        font-size: 1px;
+      }
+    }
+  }
+
+  .AMC7CCFour {
+    div.AMC7CC4Text {
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+      p.Text2 {
+        font-size: 14px;
+      }
+    }
+    div.AMC7CC4Text2 {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .PPCLeftLogo {
+    display: none;
+    visibility: hidden;
+  }
+  .PPCLeftText {
+    width: 90%;
+  }
+  .PPCRightText {
+    width: 90%;
+  }
 }
