@@ -14,6 +14,10 @@
   font-weight: 400;
   font-size: 14px;
 }
+sup {
+  top: -0.2em;
+  left: 0.3rem;
+}
 .ProductFilter {
   width: 100%;
   color: black;
@@ -166,12 +170,10 @@ h2.HeadingUpdatedStyle2 {
 
 .GalleryPortion {
   width: 100%;
-  min-height: 1000px;
-  height: auto;
-  background-color: #F8F8F8;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  padding-top: 50px;
+  height: fit-content;
+  background-color: #f8f8f8;
+  padding: 4.2%;
+  padding-top: 75%;
   position: relative;
   img {
     position: absolute;
@@ -382,7 +384,7 @@ h2.HeadingUpdatedStyle2 {
 
 .PastProjectContainer {
   width: 100%;
-  height: 150px;
+  height: 250px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -405,10 +407,11 @@ h2.HeadingUpdatedStyle2 {
   align-items: center;
 }
 .PPCLeftText {
-  width: 40%;
+  width: 75%;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  margin-left: 30px;
+  // justify-content: center;
   display: flex;
   flex-wrap: wrap;
   h1 {
@@ -417,7 +420,7 @@ h2.HeadingUpdatedStyle2 {
     width: 100%;
     color: #707070;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 0px;
+    // margin-bottom: 0px;
   }
   p {
     font-size: 18px;
@@ -425,8 +428,10 @@ h2.HeadingUpdatedStyle2 {
     color: #707070;
     width: 100%;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 0px;
-    text-decoration: underline;
+    // margin-bottom: 0px;
+  }
+  b {
+    color: #707070;
   }
 }
 .PPCRight {
@@ -557,7 +562,7 @@ h2.HeadingUpdatedStyle2 {
     color: #ff1d31;
     margin-top: 0px;
     font-size: 68px;
-    font-weight: 400;
+    font-weight: 350;
   }
   h2 {
     font-family: "Roboto", sans-serif;
@@ -600,13 +605,141 @@ h2.HeadingUpdatedStyle2 {
   color: #707070;
 }
 
-@media screen and (max-width: 1000px) {
-  .TextContainer {
-    width: 76%;
+.LogoStyling {
+  width: auto;
+  margin: 70px;
+}
+
+.showOnDesktop {
+  display: flex;
+  visibility: visible;
+}
+.showOnMobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1100px) {
+  .PPITextContainer {
+    h1 {
+      font-size: 34px;
+    }
+  }
+
+  .HeadingOne {
+    width: 60%;
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  .HeadingOne1 {
+    width: 80%;
+    h1 {
+      font-size: 34px;
+      text-align: center;
+    }
+  }
+  .HeadingTwo {
+    p {
+      font-size: 23px;
+    }
+  }
+
+  .List {
+    li {
+      font-size: 23px;
+    }
+  }
+  .List1 {
+    li {
+      font-size: 23px;
+    }
+  }
+  h2.HeadingUpdatedStyle {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1000px) {
+  .PPCLeft {
+    width: 100%;
+    height: 200px;
+  }
+  .PPCRight {
+    width: 100%;
+    height: 200px;
+  }
+  .PastProjectContainer {
+    height: fit-content;
+  }
+  .TextContainer {
+    width: 76%;
+  }
+  h2.HeadingUpdatedStyle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .StandardsImageContainer {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .LogoStyling {
+    margin: 7%;
+  }
+  .PPITextContainer {
+    h1 {
+      font-size: 32px;
+      width: 70%;
+      margin: auto;
+    }
+  }
+  .TextLogoContainer2 {
+    P {
+      width: 85%;
+    }
+  }
+  .HeadingOne {
+    width: 60%;
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  .HeadingOne1 {
+    width: 80%;
+    h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+  .HeadingTwo {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .List {
+    li {
+      font-size: 20px;
+    }
+  }
+  .List1 {
+    li {
+      font-size: 20px;
+    }
+  }
+  h2.HeadingUpdatedStyle {
+    text-align: center;
+  }
+  .SolidImageOne {
+    height: 500px;
+    object-fit: cover;
+  }
   .ProductPageImage2 {
     flex-wrap: wrap;
   }
@@ -628,5 +761,315 @@ h2.HeadingUpdatedStyle2 {
     position: relative;
     top: 0;
     transform: translate(10px, 10px);
+  }
+  .BacteriaStandardContainer {
+    padding: 0px;
+    padding-top: 0px;
+  }
+  .BSCLeft {
+    width: 65%;
+    height: 480px;
+    padding-right: 0px;
+    h1 {
+      font-size: 34px;
+      margin-top: 60px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .BSCRight {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    h1 {
+      font-size: 68px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .ButtonContainer {
+    button {
+      border: 1px solid #c0c0c0;
+      width: 40%;
+      height: 37px;
+      margin: 20px;
+      background-color: transparent;
+      color: #707070;
+    }
+    button:hover {
+      border: 1px solid #ff1d31;
+      background-color: #ff1d31;
+      color: white;
+      transition-duration: 0.3s;
+    }
+  }
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .TextLogoContainer2 {
+    h1 {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .LogoStyling {
+    margin: 7%;
+    width: 25%;
+  }
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+  .LogoContainer {
+    height: fit-content;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .PPCLeft {
+    width: 100%;
+    height: 150px;
+  }
+  .GalleryPortion {
+    display: none;
+    visibility: hidden;
+  }
+  .TextLogoContainer {
+    padding: 0px;
+  }
+  .ButtonContainer {
+    margin-top: 0px;
+  }
+  .showOnMobile {
+    display: block;
+    visibility: visible;
+  }
+  .showOnDesktop {
+    display: none;
+    visibility: hidden;
+  }
+  .OLCData {
+    h1 {
+      width: 90%;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 37px;
+      letter-spacing: 0em;
+    }
+  }
+  .PPCRight {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .BacteriaList {
+    h3 {
+      font-size: 14px;
+    }
+  }
+  .BSCLeft {
+    width: 75%;
+    height: 520px;
+  }
+  .PPITextContainer {
+    h1 {
+      font-size: 23px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0.03em;
+      text-align: center;
+    }
+  }
+  .SolidImageOne {
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .HeadingOne {
+    width: 80%;
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 40px;
+    }
+  }
+
+  .HeadingTwo {
+    width: 70%;
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  h2.HeadingUpdatedStyle2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .FranchiseTextPortion {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: fit-content;
+    min-height: fit-content;
+  }
+
+  .HeadingOne1 {
+    width: 80%;
+    h1 {
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 35px;
+    }
+  }
+  .HeadingTwo {
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 32px;
+      width: 90%;
+    }
+  }
+
+  .SecondContainer {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .AntimicrobialPageContainerOne {
+    p {
+      font-size: 18px;
+    }
+  }
+  .ButtonContainer2 {
+    height: 200px;
+    button {
+      width: 60%;
+    }
+  }
+  .StandardsImageContainer {
+    left: 20%;
+    width: auto;
+  }
+  .BSCRight {
+    width: 90%;
+  }
+  .StandardLogo {
+    width: 130px;
+  }
+  .ListContainer1 {
+    margin-top: 25px;
+  }
+  .List1 {
+    li {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ButtonContainer {
+    button {
+      width: 50%;
+    }
+  }
+  .List {
+    li {
+      color: #707070;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 35px;
+      margin: 10px;
+    }
+  }
+  .TextLogoContainer2 {
+    h1 {
+      font-size: 30px !important;
+    }
+    h2 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+  }
+  .PPCLeftLogo {
+    display: none;
+    visibility: hidden;
+  }
+  .PPCRightText {
+    width: 90%;
+  }
+  .BSCLeft {
+    p {
+      font-size: 14px;
+    }
+  }
+  .PPCLeftText {
+    width: 90%;
+  }
+  .PPCLeftText {
+    h1 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .BSCLeft {
+    h1 {
+      font-size: 30px;
+      margin-top: 60px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .BSCRight {
+    height: 600px;
+  }
+  .LearnMoreContainer {
+    b {
+      font-size: 14px;
+    }
+  }
+  .HeadingOne {
+    width: 90%;
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .HeadingTwo {
+    width: 80%;
+    margin-top: 60px !important;
+    p {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .PPITextContainer {
+    h1 {
+      font-size: 21px;
+    }
+  }
+  h2.HeadingUpdatedStyle {
+    font-size: 28px;
   }
 }
