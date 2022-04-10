@@ -91,6 +91,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #707070;
+    width: 85%;
   }
 }
 
@@ -111,7 +112,7 @@
 .AMCTRight {
   width: 50%;
   height: 100%;
-  padding-left: 75px;
+  padding-left: 45px;
   position: relative;
   h1 {
     font-family: "Roboto", sans-serif;
@@ -158,6 +159,7 @@
 .TTChild {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
@@ -263,3 +265,306 @@
   }
 }
 
+.show {
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+  .AMCORight {
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .AMCORight {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  .AMCOLeft {
+    padding: 80px;
+  }
+  .AMCTRight {
+    h1 {
+      font-size: 43px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .GICRight {
+    p {
+      font-size: 23px !important;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .AMCTRight {
+    width: 55%;
+    h1 {
+      font-size: 38px;
+      margin-bottom: 30px;
+      line-height: 40px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  .AMCTLeft {
+    width: 45%;
+  }
+  .AMCORight {
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .ChildLogoContainer {
+    width: 17%;
+  }
+  .GICRight {
+    width: 70%;
+    p {
+      font-size: 21px !important;
+    }
+  }
+  .GICLeft {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .AMCTRight {
+    width: 55%;
+    h1 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .AMCTLeft {
+    width: 45%;
+  }
+  .AMCOLeft {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .AMCTRight {
+    width: 55%;
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .AMCTLeft {
+    width: 45%;
+  }
+  .AMCOLeft {
+    width: 100%;
+  }
+  .AMCORight {
+    width: 100%;
+    height: 500px;
+  }
+  .ChildTextContainer {
+    h1 {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hide {
+    display: none;
+    visibility: hidden;
+  }
+  .show {
+    display: flex;
+    visibility: visible;
+  }
+  .logt {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 25%;
+    }
+  }
+  .TTChild {
+    flex-direction: column;
+  }
+  .ChildLogoContainer {
+    margin: auto;
+    width: 25%;
+  }
+  .ChildTextContainer {
+    margin-top: 30px;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .TTCTwo {
+    margin-top: 40px;
+  }
+  .TTCThree {
+    margin-top: 40px;
+  }
+  .AMCTLeft {
+    display: none;
+    visibility: hidden;
+  }
+  .AMCTRight {
+    width: 100%;
+    padding: 50px;
+    h1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 67px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+      margin-bottom: 60px;
+    }
+    P {
+      font-family: "Roboto", sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+    }
+  }
+  .GICLeft {
+    width: 100%;
+    h1 {
+      text-align: center;
+    }
+  }
+  .GICRight {
+    width: 100%;
+    padding: 40px;
+  }
+  .GrowInnovateContainer {
+    min-height: 350px;
+    padding-top: 30px;
+  }
+  .HPDText {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .TableTypeContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h1.MainTTHeading {
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+  }
+  .TTChild {
+    width: 95%;
+  }
+  .ChildTextContainer {
+    width: 95%;
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .AMCORight {
+    h1 {
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .AMCOLeft {
+    p {
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .AMCTRight {
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .AMCORight {
+    height: 300px;
+    h1 {
+      line-height: 30px;
+      font-size: 17px;
+    }
+  }
+  .AMCOLeft {
+    padding: 30px;
+    h1 {
+      font-size: 30px;
+      line-height: 42px;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 30px;
+    }
+  }
+  .AMCTRight {
+    padding: 30px;
+    h1 {
+      margin-bottom: 25px;
+    }
+  }
+  .ChildTextContainer {
+    width: 95%;
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .GICLeft {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  .GICRight {
+    width: 100%;
+    padding: 40px;
+    padding-top: 0px;
+    p {
+      font-size: 18px !important;
+    }
+  }
+}
