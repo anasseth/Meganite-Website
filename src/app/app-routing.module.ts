@@ -10,6 +10,7 @@ import { InspirationEducationComponent } from './inspiration-education/inspirati
 import { NewsComponent } from './news/news.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
+import { WhereToBuyComponent } from './where-to-buy/where-to-buy.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'antimicrobial',
     component: AntimicrobialComponent
+  },
+  {
+    path: 'wheretobuy',
+    component: WhereToBuyComponent
   },
 ];
 

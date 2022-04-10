@@ -21,6 +21,7 @@ import { AboutMeganiteComponent } from './about-meganite/about-meganite.componen
 import { WhereToBuyComponent } from './where-to-buy/where-to-buy.component';
 import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component';
 import { MatIconModule } from '@angular/material/icon';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,8 @@ import { MatIconModule } from '@angular/material/icon';
     CarouselModule,
     FontAwesomeModule,
     NgwWowModule,
+    ReactiveFormsModule,
+    FormsModule,
     MatIconModule,
     AnimateOnScrollModule.forRoot()
   ],

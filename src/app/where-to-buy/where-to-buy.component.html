@@ -1,1 +1,63 @@
-<p>where-to-buy works!</p>
+<div class="WhereToBuyMainPage">
+  <div class="WhereToBuyMainPath">Home / Where To Buy</div>
+  <div class="MainContainer">
+    <div class="SearchBoxContainer">
+      <h1>Search By Location</h1>
+      <div class="InputContainer">
+        <p style="margin-bottom: 18px; display: block">Country</p>
+        <select
+          name=""
+          id=""
+          class="InputStyling"
+          placeholder="Taiwan"
+          [(ngModel)]="this.selectedCountry"
+        >
+          <option value="Taiwan">Please Select</option>
+          <option value="Taiwan">Taiwan</option>
+          <option value="Europe">Europe</option>
+        </select>
+      </div>
+      <div class="InputContainer">
+        <p style="margin-bottom: 18px; display: block">City</p>
+        <select
+          name=""
+          id=""
+          class="InputStyling"
+          placeholder="Taiwan"
+          [(ngModel)]="this.selectedState"
+        >
+          <option value="Taiwan">Please Select</option>
+          <option value="Taiwan">Taiwan</option>
+          <option value="Europe">Europe</option>
+        </select>
+      </div>
+    </div>
+    <div class="MapContainer">
+      <img src="../../assets/Where-To-Buy/map.png" alt="" />
+    </div>
+  </div>
+  <div class="ResultContainer">
+    <div class="ResultCard" *ngFor="let locations of getFilteredLoations()">
+      <h1 class="LocationName">{{ locations.locationName }}</h1>
+      <div class="Address">
+        <p>
+          {{ locations.address }}
+        </p>
+      </div>
+      <div class="ServiceArea">
+        <p>Service Area</p>
+      </div>
+      <div class="ServiceAreaDescription">
+        <p>
+          {{ locations.serviceArea }}
+        </p>
+      </div>
+      <div class="MoreInfo">
+        <p>{{ locations.phoneNumber }}</p>
+        <p>Visit Retailer's Site</p>
+        <p>{{ locations.email }}</p>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

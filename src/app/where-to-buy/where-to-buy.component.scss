@@ -1,0 +1,304 @@
+.WhereToBuyMainPage {
+  margin-top: 65px;
+  width: 100%;
+  position: absolute;
+  height: max-content;
+}
+.WhereToBuyMainPath {
+  width: 100%;
+  background-color: #f8f8f8;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.MainContainer {
+  background-color: white;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.SearchBoxContainer {
+  width: 27%;
+  //   border: 1px solid red;
+  height: 80%;
+  max-height: 480px;
+  h1 {
+    width: 50%;
+    font-family: "Lora", serif;
+    font-size: 19px;
+    font-weight: 450;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 18px;
+  }
+}
+.InputContainer {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 26px;
+  font-size: 14px;
+  p {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    display: inline;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.InputStyling {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: #c0c0c0;
+  //   padding-left: 10px;
+  width: 173px;
+  height: 23px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid red;
+  outline: none;
+}
+.InputStyling::placeholder {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.MapContainer {
+  width: 65%;
+  //   border: 1px solid black;
+  height: 80%;
+  text-align: center;
+  max-height: 480px;
+  img {
+    width: 85%;
+    max-height: 525px;
+    object-fit: cover;
+  }
+}
+.ResultContainer {
+  width: 100%;
+  //   padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+}
+.ResultCard {
+  width: 24%;
+  max-width: 300px;
+  height: 300px;
+  margin: 15px;
+  //   border: 1px solid black;
+}
+
+.LocationName {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff1d31;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+.Address {
+  height: 38px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #888888;
+  }
+}
+.ServiceArea {
+  height: 20px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+  p {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+  }
+}
+.ServiceAreaDescription {
+  height: 47px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid #dbdbdb;
+  p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #888888;
+  }
+}
+.MoreInfo {
+  height: 60px;
+  font-family: "Roboto", sans-serif;
+  //   border-bottom: 1px solid #dbdbdb;
+  p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 3px;
+    color: #888888;
+    // font-size: 10px;
+    // font-weight: 400;
+    // line-height: 22px;
+    // letter-spacing: 0em;
+    // text-align: left;
+  }
+}
+
+@media screen and(max-width:1300px) {
+  .SearchBoxContainer {
+    h1 {
+      width: 60%;
+    }
+  }
+  .InputContainer {
+    width: 60%;
+  }
+}
+@media screen and(max-width:1000px) {
+  .SearchBoxContainer {
+    h1 {
+      width: 70%;
+    }
+  }
+  .InputContainer {
+    width: 70%;
+  }
+  .MapContainer {
+    img {
+      width: 90%;
+    }
+  }
+}
+@media screen and(max-width:900px) {
+  .MainContainer {
+    max-height: 600px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .SearchBoxContainer {
+    h1 {
+      width: 80%;
+    }
+  }
+  .InputContainer {
+    width: 80%;
+  }
+  .MapContainer {
+    img {
+      width: 95%;
+    }
+  }
+  .ResultContainer {
+    justify-content: right;
+  }
+  .ResultCard {
+    width: 50%;
+  }
+}
+
+@media screen and(max-width:800px) {
+  .MainContainer {
+    max-height: 600px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .ResultContainer {
+    justify-content: right;
+  }
+  .ResultCard {
+    width: 50%;
+  }
+}
+@media screen and(max-width:750px) {
+  .SearchBoxContainer {
+    h1 {
+      width: 100%;
+    }
+  }
+  .InputContainer {
+    width: 100%;
+  }
+  .ResultContainer {
+    justify-content: center;
+  }
+  .ResultCard {
+    width: 50%;
+  }
+}
+
+@media screen and(max-width:650px) {
+  .SearchBoxContainer {
+    width: 100%;
+    margin-bottom: 30px;
+    h1 {
+      width: 90%;
+    }
+  }
+  .MapContainer {
+    width: 100%;
+    img {
+      width: 95%;
+    }
+  }
+  .InputStyling {
+    width: 90%;
+  }
+  .InputContainer {
+    width: 90%;
+  }
+  .ResultContainer {
+    justify-content: center;
+  }
+  .ResultCard {
+    width: 50%;
+    margin: 0px;
+  }
+  .MainContainer {
+    max-height: 900px;
+  }
+  .ResultCard {
+    width: 90%;
+    max-width: 600px;
+  }
+}
