@@ -20,7 +20,7 @@ sup {
 }
 .AntimicrobialPageImage {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   position: relative;
   background-color: white;
 }
@@ -222,6 +222,7 @@ sup {
   height: auto;
   padding-top: 35px;
 }
+
 .ButtonContainer {
   height: 150px;
   background-color: #f5f5f5;
@@ -324,6 +325,9 @@ sup {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+.AMC7:hover {
+  cursor: pointer;
 }
 .AMC7ChildContainer {
   height: 450px;
@@ -586,6 +590,12 @@ sup {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  color: #707070;
+  transition-duration: 0.3s;
+}
+.PPCLeft:hover {
+  color: #ff1d31;
+  transition-duration: 0.3s;
 }
 .PPCLeftLogo {
   width: 20%;
@@ -593,7 +603,12 @@ sup {
   display: flex;
   justify-content: center;
   align-items: center;
+  span {
+    font-size: 70px;
+    color: inherit;
+  }
 }
+
 .PPCLeftText {
   width: 75%;
   height: 100%;
@@ -618,7 +633,11 @@ sup {
     // margin-bottom: 0px;
   }
   b {
-    color: #707070;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: inherit;
   }
 }
 .PPCRight {
@@ -629,13 +648,20 @@ sup {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  color: #707070;
+  transition-duration: 0.3s;
+}
+
+.PPCRight:hover {
+  color: #ff1d31;
+  transition-duration: 0.3s;
 }
 
 .PPCRightText {
   width: 75%;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   display: flex;
   flex-wrap: wrap;
   h1 {
@@ -655,7 +681,11 @@ sup {
     // margin-bottom: 0px;
   }
   b {
-    color: #707070;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: inherit;
   }
 }
 

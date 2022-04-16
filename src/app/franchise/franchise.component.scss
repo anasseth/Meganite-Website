@@ -45,7 +45,7 @@
 }
 .ProductPageImage {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   position: relative;
   background-color: white;
 }
@@ -141,6 +141,12 @@
     margin: 20px;
     background-color: transparent;
     color: #707070;
+  }
+  button:hover {
+    border: 1px solid #ff1d31;
+    background-color: #ff1d31;
+    color: white;
+    transition-duration: 0.3s;
   }
 }
 .LogoContainer {
@@ -271,7 +277,7 @@
 
 .PastProjectContainer {
   width: 100%;
-  height: 250px;
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -285,6 +291,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.3s;
+  color: #707070;
+}
+.PPCLeft:hover {
+  color: #ff1d31;
+  transition-duration: 0.3s;
 }
 .PPCLeftLogo {
   width: 20%;
@@ -292,6 +304,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  span {
+    font-size: 60px;
+    color: inherit;
+  }
 }
 .PPCLeftText {
   width: 75%;
@@ -311,13 +327,13 @@
   p {
     font-size: 18px;
     font-weight: 400;
-    color: #707070;
+    color: inherit;
     width: 100%;
     font-family: "Roboto", sans-serif;
     // margin-bottom: 0px;
   }
   b {
-    color: #707070;
+    color: inherit;
   }
 }
 .PPCRight {
@@ -377,6 +393,29 @@
 .LogoStyling {
   width: auto;
   margin: 70px;
+}
+
+.TextTiltContainer {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  // background-color: red;
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18px;
+  a {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: white;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -487,12 +526,6 @@
       margin: 20px;
       background-color: transparent;
       color: #707070;
-    }
-    button:hover {
-      border: 1px solid #ff1d31;
-      background-color: #ff1d31;
-      color: white;
-      transition-duration: 0.3s;
     }
   }
   .LogoContainer {
