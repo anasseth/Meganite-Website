@@ -249,6 +249,9 @@ agm-map {
   .ResultCard {
     width: 50%;
   }
+  agm-map {
+    height: 380px;
+  }
 }
 
 @media screen and(max-width:800px) {
@@ -263,6 +266,9 @@ agm-map {
   }
   .ResultCard {
     width: 50%;
+  }
+  agm-map {
+    height: 280px;
   }
 }
 @media screen and(max-width:750px) {
@@ -279,6 +285,9 @@ agm-map {
   }
   .ResultCard {
     width: 50%;
+  }
+  agm-map {
+    height: 250px;
   }
 }
 
@@ -315,5 +324,8 @@ agm-map {
   .ResultCard {
     width: 90%;
     max-width: 600px;
+  }
+  agm-map {
+    height: 300px;
   }
 }
