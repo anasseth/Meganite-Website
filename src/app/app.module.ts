@@ -22,6 +22,7 @@ import { WhereToBuyComponent } from './where-to-buy/where-to-buy.component';
 import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule,
     MatIconModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDmW0pz03WIpnH-HDUtU4i8ivLZJjGqcBQ'
+    })
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
