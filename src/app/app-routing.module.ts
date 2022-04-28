@@ -10,6 +10,8 @@ import { InspirationEducationComponent } from './inspiration-education/inspirati
 import { NewsComponent } from './news/news.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
+import { ProductSinkComponent } from './product-sink/product-sink.component';
+import { SpecificationRequestComponent } from './specification-request/specification-request.component';
 import { WhereToBuyComponent } from './where-to-buy/where-to-buy.component';
 
 const routes: Routes = [
@@ -56,6 +58,14 @@ const routes: Routes = [
   {
     path: 'wheretobuy',
     component: WhereToBuyComponent
+  },
+  {
+    path: 'product/sink',
+    component: ProductSinkComponent
+  },
+  {
+    path: 'specification/request',
+    component: SpecificationRequestComponent
   },
 ];
 

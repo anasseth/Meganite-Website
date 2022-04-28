@@ -1,0 +1,138 @@
+<div class="ProductMainPage">
+  <div class="HomeLinkContainer hide Desktop">
+    <div class="mainIconContainer">
+      <button class="mainIcon">
+        <fa-icon [icon]="faMapMarker"></fa-icon>
+      </button>
+      <p>Location</p>
+    </div>
+
+    <div class="mainIconContainer">
+      <button class="mainIcon" style="position: relative">
+        <span
+          class="SampleQuantity"
+          *ngIf="this._global.addedToCart.length > 0"
+        >
+          {{
+            this._global.addedToCart.length < 10
+              ? this._global.addedToCart.length
+              : "9+"
+          }}
+        </span>
+        <fa-icon [icon]="faCartPlus"></fa-icon>
+      </button>
+      <p>Request Sample</p>
+    </div>
+
+    <div class="mainIconContainer">
+      <button class="mainIcon">
+        <fa-icon [icon]="faEnvelop"></fa-icon>
+      </button>
+      <p>Message Us</p>
+    </div>
+  </div>
+
+  <div class="FilterFixedContainer">
+    <div class="ProductMainPath">Home / Prodcut / Solid Surface</div>
+    <div class="ProductFilter">
+      <div class="FilterDropdown FD-1" (click)="selectFilter('Sink')">
+        <span class="">Filter</span>
+        <fa-icon
+          [icon]="Drop"
+          *ngIf="selectedFilter != 'Sink'"
+          class="DropIcon"
+        ></fa-icon>
+        <fa-icon
+          [icon]="Up"
+          *ngIf="showFilter && selectedFilter == 'Sink'"
+          class="DropIcon"
+        ></fa-icon>
+      </div>
+    </div>
+
+    <div>
+      <div
+        [ngClass]="
+          selectedFilter == 'Sink'
+            ? 'ProductFilterOption PFOBackground1'
+            : selectedFilter == 'Color'
+            ? 'ProductFilterOption PFOBackground2'
+            : 'ProductFilterOption PFOBackground3'
+        "
+        *ngIf="showFilter"
+      >
+        <div class="Options addMarginLeft">Sink</div>
+        <div
+          [ngClass]="
+            checkIfFilterSelected(opt) == true
+              ? 'Options OptionsHover OptionBack'
+              : 'Options OptionsHover'
+          "
+          *ngFor="let opt of filterOptionsData()"
+          (click)="addSelectedFilter(opt)"
+        >
+          {{ opt }}
+          <b
+            style="float: right; color: #e0e0e0"
+            *ngIf="checkIfFilterSelected(opt) == true"
+            >x</b
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ProductPageImage" *ngIf="appliedFilter.length == 0">
+    <img src="../../assets/Product-Sink/m.png" class="SolidImageOne" />
+    <div class="PPITextContainer">
+      <div>
+        <h1>Sinks and basins collection</h1>
+      </div>
+      <div>
+        <p>Meganite ®</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    [ngClass]="
+      appliedFilter.length > 0
+        ? 'ProductsContainerOne addMargin'
+        : 'ProductsContainerOne'
+    "
+  >
+    <div
+      class="{{ product.className }}"
+      *ngFor="let product of ProductImageBundle; let i = index"
+    >
+      <img [src]="product.imgSrc" />
+      <div class="PieceTextContainer">
+        <br />
+        <b>{{ product.materialName }}</b>
+        <a>{{ product.code }}</a>
+        <a>{{ product.similarity }}</a>
+      </div>
+      <fa-icon
+        [icon]="Check"
+        class="CheckIcon"
+        *ngIf="checkProductInCart(product) > 0"
+      ></fa-icon>
+      <div class="productContainer slide-in-bottom">
+        <button (mouseenter)="clickProduct(product.imgSrc, i)">
+          {{ activeProductIndex == i ? "Download" : "FACT Sheet" }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="MovementSeriesContainer" *ngIf="appliedFilter.length == 0">
+    <img
+      src="../../assets/Product-Sink/below-m.png"
+      style="width: 100%; height: auto"
+    />
+    <div class="MSCTextContainer">
+      <h1>Interested in specifying Meganite in your next project ?</h1>
+      <button>CONTACT US</button>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

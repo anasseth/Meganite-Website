@@ -23,6 +23,10 @@ import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component'
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
+import { SpecificationTechnicalComponent } from './specification-technical/specification-technical.component';
+import { SpecificationRequestComponent } from './specification-request/specification-request.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ProductSinkComponent } from './product-sink/product-sink.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { AgmCoreModule } from '@agm/core';
     InspirationEducationComponent,
     AboutMeganiteComponent,
     WhereToBuyComponent,
-    AntimicrobialComponent
+    AntimicrobialComponent,
+    SpecificationTechnicalComponent,
+    SpecificationRequestComponent,
+    ContactUsComponent,
+    ProductSinkComponent
   ],
   imports: [
     BrowserModule,
