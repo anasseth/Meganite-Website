@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutMeganiteComponent } from './about-meganite/about-meganite.component';
 import { AntimicrobialComponent } from './antimicrobial/antimicrobial.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FranchiseComponent } from './franchise/franchise.component';
 import { HealthcareComponent } from './healthcare/healthcare.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +13,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductShowcaseComponent } from './product-showcase/product-showcase.component';
 import { ProductSinkComponent } from './product-sink/product-sink.component';
 import { SpecificationRequestComponent } from './specification-request/specification-request.component';
+import { SpecificationTechnicalComponent } from './specification-technical/specification-technical.component';
 import { WhereToBuyComponent } from './where-to-buy/where-to-buy.component';
 
 const routes: Routes = [
@@ -66,6 +68,14 @@ const routes: Routes = [
   {
     path: 'specification/request',
     component: SpecificationRequestComponent
+  },
+  {
+    path: 'specification/technical',
+    component: SpecificationTechnicalComponent
+  },
+  {
+    path: 'contactus',
+    component: ContactUsComponent
   },
 ];
 

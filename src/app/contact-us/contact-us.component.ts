@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
+  qty=[10,10,10,10,10,10,10,10,10,10,10,10]
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  decrement(i:any){
+    this.qty[i] = this.qty[i] -1
+  }
+
+  increment(i:any){
+    this.qty[i] = this.qty[i] +1
   }
 
 }

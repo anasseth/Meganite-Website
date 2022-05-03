@@ -1,0 +1,896 @@
+.ProductMainPage {
+  margin-top: 65px;
+  width: 100%;
+  position: absolute;
+  height: max-content;
+  background-color: white;
+}
+.ProductMainPath {
+  width: 100%;
+  background-color: #f8f8f8;
+  height: 50px;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.ProductPageImage {
+  width: 100%;
+  // height: 100%;
+  position: relative;
+  background-color: white;
+}
+
+.DetailTextContainer {
+  //   padding-bottom: 50px;
+}
+.DualContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.RightImage {
+  //   width: 50%;
+  //   padding-bottom: 150px;
+}
+
+.RightContainer {
+  width: 50%;
+  //   padding-bottom: 150px;
+}
+.LeftContainer {
+  width: 50%;
+  //   padding-bottom: 150px;
+}
+
+.TextContainer {
+  margin: auto;
+  width: 66%;
+  margin-top: 50px;
+  height: 80%;
+  h1 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  a {
+    border-bottom: 1px solid #c0c0c0;
+    width: 100%;
+    // padding-top: 12px;
+    display: block;
+    // padding-bottom: 12px;
+    position: relative;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    color: #707070;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: 0em;
+  }
+  a:hover {
+    color: #ff1d31;
+    border-bottom: 1px solid #ff1d31;
+    transition-duration: 0.3s;
+  }
+}
+.DetailTextContainer {
+  //   padding-bottom: 50px;
+}
+.Code {
+  color: #c0c0c0;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  // margin-top: -10px;
+}
+.TagText {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+}
+.DropIcon {
+  color: inherit;
+  position: absolute;
+  right: 0px;
+}
+
+.PPITextContainer {
+  width: 95%;
+  text-align: center;
+  position: absolute;
+  bottom: 15%;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: none;
+  padding-bottom: 40px;
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.PPITag {
+  width: 95%;
+  text-align: center;
+  position: absolute;
+  bottom: 15%;
+  color: white;
+  border-top: 1px solid white;
+  padding-top: 5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+}
+
+.SpecTechMainPage {
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+  padding-top: 70px;
+}
+
+.SpecTool {
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #888888;
+  height: 62px;
+  position: relative;
+  margin-top: 100px;
+  padding-top: 10px;
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0%;
+    margin-left: 10%;
+    // position: absolute;
+    // top: 50%;
+    // left: 27%;
+    // -ms-transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
+  }
+}
+.SpecToolHeader {
+  height: 62px;
+}
+
+.TextLogoContainer {
+  width: 100%;
+  background-color: white;
+  height: auto;
+  //   padding-top: 35px;
+}
+.ButtonContainer {
+  height: 150px;
+  //   margin-top: 50px;
+  background-color: #f8f8f8;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  button {
+    border: 1px solid #c0c0c0;
+    width: 20%;
+    height: 37px;
+    margin: 20px;
+    background-color: transparent;
+    color: #707070;
+  }
+  button:hover {
+    border: 1px solid #ff1d31;
+    background-color: #ff1d31;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}
+.LogoContainer {
+  height: 450px;
+  background-color: white;
+  width: 100%;
+  //   border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.TextLogoContainer2 {
+  width: 100%;
+  background-color: white;
+  height: fit-content;
+  padding-top: 35px;
+  text-align: center;
+  h1 {
+    font-size: 36px !important;
+    font-family: "Lora", serif;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 36px !important;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #707070;
+    font-size: 24px !important;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+  p {
+    color: #707070;
+    font-size: 22px;
+    font-weight: 400;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.TextContainer3 {
+  margin-top: 140px;
+  padding-bottom: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+.TC3Point {
+  margin: auto;
+  margin-top: 80px;
+  width: 50%;
+  background-color: white;
+  p {
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #707070;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.MovementSeriesContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: fit-content;
+  min-height: 300px;
+}
+.ButtonContainer2 {
+  height: 120px;
+  background-color: #f8f8f8;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  button {
+    width: 20%;
+    height: 37px;
+    margin: 20px;
+    border: 1px solid #ff1d31;
+    background-color: #ff1d31;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+.MSCTextContainer {
+  position: absolute;
+  margin: auto;
+  margin-top: 7%;
+  text-align: center;
+  h1 {
+    font-family: "Lora", serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+  button {
+    width: 300px;
+    height: 37px;
+    color: white;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    margin-top: 52px;
+    transition-duration: 0.3s;
+  }
+  button:hover {
+    background-color: #ff1d31;
+    border: 1px solid #ff1d31;
+    color: white;
+    transition-duration: 0.3s;
+  }
+}
+
+.LogoStyling {
+  width: auto;
+  margin: 70px;
+}
+
+.SolidImageOne {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1230px) {
+  .PPITextContainer {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .MainPara3Container {
+    h1 {
+      width: 53%;
+    }
+  }
+  .MainPara4Container {
+    h1 {
+      width: 56%;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .PPITextContainer {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .HeadingOne {
+    width: 65%;
+  }
+  .MainHeading2Container {
+    h1 {
+      width: 55%;
+    }
+  }
+  .ChildLogoContainer {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .DualContainer {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .RightContainer {
+    width: 90%;
+    //   padding-bottom: 150px;
+  }
+  .LeftContainer {
+    width: 90%;
+    //   padding-bottom: 150px;
+  }
+
+  .TC3Point {
+    width: 70%;
+    p {
+      font-size: 24px;
+    }
+  }
+  .MainPara3Container {
+    h1 {
+      width: 63%;
+    }
+  }
+  .MainPara4Container {
+    h1 {
+      width: 67%;
+    }
+  }
+  .PastProjectContainer {
+    height: fit-content;
+  }
+  .TextContainer {
+    width: 76%;
+  }
+  .PPCLeft {
+    width: 100%;
+    height: 250px;
+  }
+  .PPCRight {
+    width: 100%;
+    height: 250px;
+  }
+  .ButtonContainer2 {
+    button {
+      width: 30%;
+    }
+  }
+  .MSCTextContainer {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .PPITextContainer {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .PPITag {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .TC3Point {
+    width: 90%;
+    p {
+      font-size: 24px;
+    }
+  }
+  .TextLogoContainer2 {
+    P {
+      width: 85%;
+    }
+  }
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+  .LogoContainer {
+    height: auto;
+  }
+  .LogoStyling {
+    margin: 7%;
+  }
+  .ThinLine {
+    // display: inline-block;
+    font-size: 15px;
+  }
+  .ButtonContainer {
+    button {
+      width: 30%;
+    }
+  }
+  .List1 {
+    li {
+      color: #707070;
+      font-size: 18px;
+      font-weight: 450;
+      font-family: "Roboto", sans-serif;
+      margin: 10px;
+      // line-height: 49px;
+      letter-spacing: 0em;
+    }
+  }
+  .MainPara5Container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .MainHeading5Container {
+    h1 {
+      font-size: 21px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .MSCTextContainer {
+    position: absolute;
+    margin: auto;
+    margin-top: 11%;
+    text-align: center;
+    width: 90%;
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+      width: 35%;
+      margin-top: 0px;
+    }
+  }
+  .HBDStyle {
+    width: 90% !important;
+  }
+  .TTChild {
+    width: 90%;
+  }
+  .ChildLogoContainer {
+    width: 17%;
+  }
+  .ChildTextContainer {
+    h1 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .MainHeading4Container {
+    h1 {
+      margin-top: 30px;
+    }
+  }
+  .MainPara4Container {
+    padding-bottom: 80px;
+  }
+  .SecondContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .MainHeading2Container {
+    h1 {
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: 0em;
+      text-align: center;
+      width: 75%;
+    }
+  }
+  .HeadingOne {
+    width: 75%;
+    h1 {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .PPITextContainer {
+    h1 {
+      font-size: 26px;
+    }
+  }
+  .ProductPageImage2 {
+    flex-wrap: wrap;
+  }
+  .LeftImage {
+    width: 100%;
+  }
+  .RightImage {
+    width: 100%;
+  }
+  .MainTextContainer {
+    // padding-bottom: 100px !important;
+  }
+
+  .TextContainer {
+    width: 86%;
+  }
+  .MainImage {
+    margin: 0;
+    position: relative;
+    top: 0;
+    transform: translate(10px, 10px);
+  }
+}
+@media screen and (max-width: 800px) {
+  .MSCTextContainer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .TextContainer3 {
+    h1 {
+      font-size: 34px;
+    }
+  }
+  .TC3Point {
+    p {
+      font-size: 22px;
+    }
+  }
+  .PPITag {
+    h1 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .ListContainer1 {
+    flex-wrap: wrap;
+  }
+  .List1 {
+    width: 90%;
+  }
+  .MainHeading2Container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .TextLogoContainer {
+    margin-top: 100px;
+  }
+  .MainHeading3Container {
+    h1 {
+      font-size: 28px;
+      width: 60%;
+    }
+  }
+  .MainHeading4Container {
+    h1 {
+      font-size: 28px;
+      width: 60%;
+    }
+  }
+  .MainPara3Container {
+    h1 {
+      width: 80%;
+      font-size: 23px;
+    }
+  }
+  .MainPara4Container {
+    h1 {
+      width: 75%;
+      font-size: 23px;
+    }
+  }
+  .ButtonContainer2 {
+    button {
+      width: 40%;
+    }
+  }
+  .LogoStyling {
+    margin: 7%;
+    width: 25%;
+  }
+  .TextLogoContainer2 {
+    h1 {
+      width: 60%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .MainHeading5Container {
+    h1 {
+      font-size: 21px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: center;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .TextContainer3 {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .TC3Point {
+    p {
+      font-size: 20px;
+    }
+  }
+  .MovementSeriesContainer {
+    height: 150px;
+  }
+  .MSCTextContainer {
+    margin-top: 15%;
+    width: 90%;
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .TC3Point {
+    p {
+      font-size: 20px;
+    }
+  }
+  .PPITextContainer {
+    padding-bottom: 10px;
+  }
+  .PPITag {
+    h1 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .ButtonContainer {
+    height: 200px;
+    button {
+      width: 60%;
+    }
+  }
+  .ButtonContainer2 {
+    height: 200px;
+    button {
+      width: 60%;
+    }
+  }
+  .List1 {
+    margin: 0px;
+  }
+  .HomeBannerSecondContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .HomeImageSecondContainer {
+    width: 100%;
+  }
+  .SolidImageOne {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  .PPITextContainer {
+    // bottom: 20%;
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .TextContainer3 {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .TC3Point {
+    width: 90%;
+    p {
+      font-size: 18px;
+    }
+  }
+  .PPCLeftLogo {
+    display: none;
+    visibility: hidden;
+  }
+  .PPCLeftText {
+    width: 90%;
+  }
+  .PPCRightText {
+    width: 90%;
+  }
+
+  .HeadingOne {
+    width: 90%;
+  }
+  .MainPara2Container {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .MainHeading3Container {
+    h1 {
+      font-size: 28px;
+      width: 70%;
+    }
+  }
+  .MainHeading4Container {
+    h1 {
+      font-size: 28px;
+      width: 70%;
+    }
+  }
+  .MainPara3Container {
+    h1 {
+      width: 80%;
+      font-size: 21px;
+    }
+  }
+  .MainPara4Container {
+    h1 {
+      width: 80%;
+      font-size: 21px;
+    }
+  }
+  .TextLogoContainer2 {
+    h1 {
+      font-size: 30px !important;
+    }
+    h2 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+  }
+  .PPCLeftText {
+    h1 {
+      font-size: 21px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .PPCRightText {
+    h1 {
+      font-size: 21px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .MSCTextContainer {
+    margin-top: 15%;
+    width: 95%;
+    h1 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 13px;
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+}
