@@ -345,7 +345,7 @@
 
   <!--  -->
 
-  <div class="ContainerThree">
+  <div class="ContainerThree showOnDesktop">
     <div class="ProductTable">
       <table class="">
         <thead>
@@ -370,6 +370,42 @@
                 <button (click)="decrement(i)">-</button>
                 <p>{{ item }}</p>
                 <button (click)="increment(i)">+</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="SpaceContainer"></div>
+  </div>
+
+  <div class="ContainerThree showOnMobile">
+    <div class="ProductTable">
+      <table class="">
+        <tbody>
+          <tr *ngFor="let item of qty; let i = index">
+            <td style="width: 25%">
+              <h1 style="margin-bottom: 20px">Image</h1>
+              <div class="ColorBox"></div>
+            </td>
+            <td class="SKU" style="width: 35%">
+              <h1>SKU</h1>
+              M009
+              <div class="Spec">
+                <h1>Spec.</h1>
+                2x2” / 5cmx5cm
+              </div>
+            </td>
+            <td style="width: 40%">
+              <h1>Amount</h1>
+              <div class="Counter">
+                <button (click)="decrement(i)">-</button>
+                <p>{{ item }}</p>
+                <button (click)="increment(i)">+</button>
+              </div>
+              <div class="Colour">
+                <h1>Colour</h1>
+                MT. CREMO CARRARAC
               </div>
             </td>
           </tr>

@@ -88,6 +88,7 @@
   margin: auto;
   margin-top: 60px;
   width: 50%;
+  min-width: 720px;
   height: 70px;
   display: flex;
   flex-wrap: wrap;
@@ -284,6 +285,7 @@ select.bolded::placeholder {
 
 .ProductTable {
   width: 50%;
+  min-width: 720px;
   margin: auto;
   table {
     width: 100%;
@@ -512,6 +514,15 @@ select.bolded::placeholder {
   }
 }
 
+.showOnMobile {
+  display: none;
+  visibility: hidden;
+}
+.showOnDesktop {
+  display: block;
+  visibility: visible;
+}
+
 @media screen and (max-width: 1200px) {
   .PPITextContainer {
     h1 {
@@ -536,7 +547,32 @@ select.bolded::placeholder {
     }
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 760px) {
+  .ContainerOneText {
+    width: 95%;
+    min-width: auto;
+  }
+  .ContainerTwoText {
+    width: 95%;
+    min-width: auto;
+  }
+  .ContainerTwoTextOne {
+    width: 95%;
+    min-width: auto;
+  }
+  .ContainerTwoForm {
+    width: 95%;
+    min-width: auto;
+  }
+  .ProductTable {
+    width: 85%;
+    min-width: auto;
+  }
+  .ContainerFourPolicy {
+    width: 95%;
+    min-width: auto;
+  }
+
   .PPITextContainer {
     h1 {
       font-size: 28px;
@@ -552,14 +588,184 @@ select.bolded::placeholder {
     flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 650px) {
-}
-
-@media screen and (max-width: 600px) {
-}
 @media screen and (max-width: 550px) {
+  .ContainerTwoTextOne {
+    p {
+      font-size: 18px;
+    }
+  }
+  .ContainerTwoText {
+    span {
+      font-size: 18px;
+    }
+  }
+  .ContainerOneText {
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .ContainerTwoForm {
+    width: 85%;
+  }
+  .Counter {
+    justify-content: space-between;
+  }
+  .showOnMobile {
+    display: block;
+    visibility: visible;
+  }
+  .showOnDesktop {
+    display: none;
+    visibility: hidden;
+  }
+  .ProductTable {
+    table {
+      width: 100%;
+      thead {
+        width: 100%;
+        tr {
+          height: 110px;
+          th {
+            height: 110px;
+            font-size: 14px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          height: 147px;
+          td {
+            height: 147px;
+            h1 {
+              margin-bottom: 5px;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Counter {
+    width: 60%;
+  }
+  .SKU {
+    font-size: 14px;
+  }
+  .Spec {
+    font-size: 14px;
+    h1 {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: black;
+      margin-top: 14px;
+      margin-bottom: 14px;
+    }
+  }
+  .Colour {
+    font-size: 14px;
+    h1 {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: black;
+      margin-top: 14px;
+      margin-bottom: 14px;
+    }
+  }
+  .DualInput {
+    flex-wrap: wrap;
+    input {
+      width: 100%;
+    }
+  }
+  .ContainerTwoForm {
+    height: 1390px;
+  }
+  .ContainerOne {
+    padding-top: 40px;
+  }
+  .ContainerTwoText {
+    height: auto;
+    span {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+  .ContainerFourPolicy {
+    height: auto;
+  }
+  .SubmitContainer {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
+  .ProductTable {
+    table {
+      width: 100%;
+      thead {
+        width: 100%;
+        tr {
+          height: 110px;
+          th {
+            height: 110px;
+            font-size: 12px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          height: 147px;
+          td {
+            height: 147px;
+            h1 {
+              margin-bottom: 5px;
+              font-size: 12px;
+              font-weight: 700;
+              line-height: 24px;
+              letter-spacing: 0em;
+              text-align: left;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .SKU {
+    font-size: 12px;
+  }
+  .Spec {
+    font-size: 12px;
+    h1 {
+      font-size: 12px;
+    }
+  }
+  .Colour {
+    font-size: 12px;
+    h1 {
+      font-size: 12px;
+    }
+  }
 }
 
 /* Safari 11+ */
