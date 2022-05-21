@@ -1,0 +1,112 @@
+<!-- <div class="HomeMainContainer"> -->
+<div class="HomeBannerFirstImage">
+  <img
+    src="../../assets/Home-Banner-1.png"
+    style="width: 100%; height: auto"
+    alt=""
+    class="mainHomeImageResponsive"
+  />
+
+  <div
+    class="HomeTextFirstContainer wow animate__animated animate__fadeInDown animate__slower"
+  >
+    <h1>
+      NEW COLORS: <br />
+      TRUE TERRAZZO COLLECTION
+    </h1>
+  </div>
+</div>
+
+<div class="NewPageTextContainer">
+  <div class="NewPageTextArea">
+    <p>
+      Meganite celebrates the renaissance of the popular 15th century Venetian
+      trend with an all-new collection of Terrazzo inspired 100% acrylic solid
+      surface design.
+    </p>
+    <p>
+      TRUE TERRAZZO captures the classic true look of natural terrazzo into
+      modern design that reveals an extraordinary aesthetic potential and
+      unprecedented versatility in daily use.
+    </p>
+    <p>
+      Compared with original terrazzo tiles, the key advantage lies with all the
+      fundamental functionality of Meganite’s standard solid surface.
+    </p>
+    <p>
+      Non-porous properties enable it to be installed in tough environments from
+      healthcare to food service to residential spaces with hygienic
+      performances and ease of maintenance.
+    </p>
+  </div>
+</div>
+
+<div class="GalleryPortion">
+  <div
+    class="GalleryImage"
+    *ngFor="let gallery of galleryData; let i = index"
+    (mouseenter)="clickProduct(gallery, i)"
+    (click)="hideProduct()"
+  >
+    <img [src]="gallery.imgSrc" />
+    <div
+      class="HoverArea slide-in-bottom"
+      *ngIf="showHover && activeIndex == i"
+    >
+      <div class="buttonArea">
+        <h3>{{ gallery.name }}</h3>
+        <button>View Color</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="width: 100%; background-color: white; padding-bottom: 100px">
+  <div class="DownloadBrochureContainer">
+    <button class="DownloadBrochure">Download Brochure</button>
+  </div>
+</div>
+
+<div class="MovementSeriesContainer">
+  <img
+    src="../../assets/New-Page/426A_Summer Beach_solid surface_interior design_1 1.png"
+    style="width: 100%; height: auto"
+  />
+  <div class="MSCTextContainer">
+    <h1>Interested in specifying Meganite in your next project ?</h1>
+    <button>CONTACT US</button>
+  </div>
+</div>
+
+<!-- <div style="position: relative">
+  <owl-carousel-o [options]="customOptions" style="margin-top: 200px">
+    <ng-template
+      carouselSlide
+      *ngFor="let product of productData; let i = index"
+    >
+      <div class="slide">
+        <img
+          [src]="product._3dImage"
+          (mouseenter)="clickProduct($event, i)"
+          alt=""
+          *ngIf="activeIndex != i"
+        />
+        <div *ngIf="activeIndex != i">
+          <br />
+          <b>MT.CARRAR</b>
+          <a>M020</a>
+        </div>
+        <img
+          *ngIf="showProduct && activeIndex == i"
+          [src]="this.productData[i]._2dImage"
+          class="scale-in-center"
+          alt=""
+          style="width: 100%; height: 100%; margin: 0"
+          (mouseout)="hideProduct()"
+        />
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div> -->
+
+<app-footer></app-footer>

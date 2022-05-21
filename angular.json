@@ -34,7 +34,8 @@
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "node_modules/material-design-icons/iconfont/material-icons.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/wowjs/css/libs/animate.css"
+              "node_modules/wowjs/css/libs/animate.css",
+              "node_modules/@ctrl/ngx-emoji-mart/picker.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
@@ -109,7 +110,8 @@
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "node_modules/material-design-icons/iconfont/material-icons.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/wowjs/css/libs/animate.css"
+              "node_modules/wowjs/css/libs/animate.css",
+              "node_modules/@ctrl/ngx-emoji-mart/picker.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.js",

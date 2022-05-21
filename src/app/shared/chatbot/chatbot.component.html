@@ -1,0 +1,87 @@
+<div class="ChatPopup">
+  <div class="ChatArea slide-in-bottom" *ngIf="showChatBox">
+    <div class="ChatAreaHeader">
+      <div class="HeaderLogo">
+        M
+        <div class="Online"></div>
+      </div>
+      <div class="ChatHeaderText">
+        <h2>Meganite Online Assistant</h2>
+      </div>
+    </div>
+    <div class="ChatAreaBody" #scrollChat>
+      <div *ngFor="let message of chatData; let i = index">
+        <div style="width: 100%" *ngIf="message.messageBy != 'Meganite'">
+          <div class="MessageRight">
+            <h2>{{ message.content }}</h2>
+          </div>
+        </div>
+        <div
+          [ngClass]="
+            getCon(i) == 'Meganite'
+              ? 'MessageLeft reduceMargin '
+              : 'MessageLeft'
+          "
+          *ngIf="message.messageBy == 'Meganite'"
+        >
+          <div class="UserLogoContainer">
+            <div class="Logo" *ngIf="getCon(i) != 'Meganite'">M</div>
+          </div>
+          <div class="MessageDailog">
+            <h3 *ngIf="getCon(i, 2) != 'Meganite'">
+              Meganite Online Assistant
+            </h3>
+            <div class="MainMessageContent">
+              <h2>
+                {{ message.content }}
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ChatAreaFooter">
+      <textarea
+        name=""
+        id=""
+        placeholder="Type here to contact Meganite"
+        [(ngModel)]="messageText"
+        autosize
+      ></textarea>
+      <fa-icon
+        [icon]="faSmile"
+        style="color: #c0c0c0; font-size: 16px"
+        (click)="isEmojiPickerVisible = !isEmojiPickerVisible"
+      ></fa-icon>
+      <fa-icon
+        [icon]="faPaperclip"
+        *ngIf="messageText.length == 0"
+        style="color: #c0c0c0; font-size: 16px"
+      ></fa-icon>
+      <fa-icon
+        (click)="sendMessage()"
+        [icon]="faPaperPlane"
+        *ngIf="messageText.length > 0"
+        style="color: #ff1d31; font-size: 16px"
+      ></fa-icon>
+    </div>
+  </div>
+  <button class="chatButton" (click)="toggleChatBox()">
+    <fa-icon
+      [icon]="faComment"
+      *ngIf="!showChatBox"
+      style="color: white; font-size: 30px"
+    ></fa-icon>
+    <fa-icon
+      [icon]="faChevronDown"
+      *ngIf="showChatBox"
+      style="color: white; font-size: 30px"
+    ></fa-icon>
+  </button>
+  <emoji-mart
+    class="emoji-mart"
+    *ngIf="isEmojiPickerVisible"
+    (emojiSelect)="addEmoji($event)"
+    title="Choose your emoji"
+  ></emoji-mart>
+</div>

@@ -27,6 +27,11 @@ import { SpecificationTechnicalComponent } from './specification-technical/speci
 import { SpecificationRequestComponent } from './specification-request/specification-request.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ProductSinkComponent } from './product-sink/product-sink.component';
+import { NewPageComponent } from './new-page/new-page.component';
+import {AutosizeModule} from 'ngx-autosize';
+import { ProjectPageComponent } from './project-page/project-page.component';
+import { ChatbotComponent } from './shared/chatbot/chatbot.component';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,10 @@ import { ProductSinkComponent } from './product-sink/product-sink.component';
     SpecificationTechnicalComponent,
     SpecificationRequestComponent,
     ContactUsComponent,
-    ProductSinkComponent
+    ProductSinkComponent,
+    NewPageComponent,
+    ProjectPageComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +67,9 @@ import { ProductSinkComponent } from './product-sink/product-sink.component';
     ReactiveFormsModule,
     FormsModule,
     MatIconModule,
+    AutosizeModule,
     AnimateOnScrollModule.forRoot(),
+    PickerModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDmW0pz03WIpnH-HDUtU4i8ivLZJjGqcBQ'
     })
